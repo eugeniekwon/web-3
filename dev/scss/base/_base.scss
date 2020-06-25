@@ -2,6 +2,20 @@
     Base
 ============= */
 
+ul{
+    
+    padding: 0;
+    
+    li{
+        list-style: none;
+
+    }
+}
+
+a:link,a:visited{
+    text-decoration: none;
+    transition: 0.25s;
+}
 
 .grid-container{
     display: grid;
@@ -20,4 +34,48 @@
 h1, h2, h3, h4, h5, h6, p{
     padding: 0px;
     margin: 0px;
+}
+
+.big-spacing{
+    margin-bottom: 120px;
+
+    @include md{
+        margin-bottom: 145px;
+    }
+
+    @include lg{
+        margin-bottom: 160px;
+    }
+}
+
+.medium-spacing{
+    margin-bottom: 50px;
+
+    @include md{
+        margin-bottom: 60px;
+    }
+
+    @include lg{
+        margin-bottom: 75px;
+    }
+}
+
+.small-spacing{
+    margin-bottom: 30px;
+
+    @include md{
+        margin-bottom: 35px;
+    }
+
+    @include lg{
+        margin-bottom: 45px;
+    }
+}
+
+.xs-spacing{
+    margin-bottom: 10px;
+
+    @include md{
+    margin-bottom: 20px;
+    }
 }

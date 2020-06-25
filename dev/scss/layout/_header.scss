@@ -1,44 +1,40 @@
 /* =============
     Header
 ============= */
-header{
-    div{
-
+header {
+    div {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         padding: 20px 0px;
 
-        #logo-container{
-            img{
-               width: 25px;
-               display: flex;
-               align-items: center;
-               justify-content: center;
+        #logo-container {
+            img {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                width: 25px;
 
-               @include md{
-                   width: initial;
-               }
-
+                @include md {
+                    width: initial;
+                }
             }
         }
 
-        #name-container{
-            h6{
-                font-family: 'Mukta', sans-serif;
-                font-weight: 600;
+        #name-container {
+            h6 {
                 color: $dark-gray;
+                font-family: 'Mukta', sans-serif;
                 font-size: rem-calc(16);
-
+                font-weight: 600;
                 text-align: center;
-
             }
         }
 
-        #burger-container{
-            font-size: rem-calc(20);
+        #burger-container {
+            align-items: center;
             color: $pink;
             display: flex;
-            align-items: center;
+            font-size: rem-calc(20);
             justify-content: flex-end;
         }
     }

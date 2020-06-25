@@ -1,3 +1,82 @@
 /* =============
     Footer
 ============= */
+footer{
+    div{
+
+        background-color: $cream;
+        padding: 120px 15px 50px 15px;
+
+        h6, p{
+            font-family: 'Mukta', sans-serif;
+            font-size: rem-calc(16);
+            font-weight: 500;
+        }
+
+        #footer-text-1{
+
+            h6{
+                color: $pink;
+            }
+
+            p{
+                color: $light-gray;
+            }
+            
+        }
+
+        #icons{
+
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-right: 10px;
+
+            #social-media{
+            
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-right: 15px;
+                    
+                    li{
+                        margin: 0px 5px 0px 0px;
+    
+                        a:link,a:visited{
+                            color: $black;
+                            font-size: rem-calc(20);
+    
+                            &:hover,&:active{
+                                color: $pink;
+                            }
+                        }
+                    }
+            }
+    
+            #payment{
+    
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                
+                    li{
+                        font-size: rem-calc(20);
+                        margin: 0px 5px 0px 0px;
+                    }
+            }
+        }
+
+        
+
+        #footer-text-2{
+            h6{
+                color: $dark-violet;
+            }
+
+            p{
+                color: $brown;
+            }
+        }
+
+    }
+}

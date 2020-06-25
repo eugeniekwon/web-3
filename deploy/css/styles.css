@@ -317,6 +317,15 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
+a:link, a:visited {
+  text-decoration: none;
+  transition: 0.25s; }
+
 .grid-container {
   display: grid;
   grid-template-columns: 15px auto 15px;
@@ -331,6 +340,35 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0px;
   margin: 0px; }
 
+.big-spacing {
+  margin-bottom: 120px; }
+  @media (min-width: 768px) {
+    .big-spacing {
+      margin-bottom: 145px; } }
+  @media (min-width: 1025px) {
+    .big-spacing {
+      margin-bottom: 160px; } }
+.medium-spacing {
+  margin-bottom: 50px; }
+  @media (min-width: 768px) {
+    .medium-spacing {
+      margin-bottom: 60px; } }
+  @media (min-width: 1025px) {
+    .medium-spacing {
+      margin-bottom: 75px; } }
+.small-spacing {
+  margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    .small-spacing {
+      margin-bottom: 35px; } }
+  @media (min-width: 1025px) {
+    .small-spacing {
+      margin-bottom: 45px; } }
+.xs-spacing {
+  margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    .xs-spacing {
+      margin-bottom: 20px; } }
 /* =============
     Typography
 ============= */
@@ -363,26 +401,65 @@ header div {
   grid-template-columns: repeat(3, 1fr);
   padding: 20px 0px; }
   header div #logo-container img {
-    width: 25px;
-    display: flex;
     align-items: center;
-    justify-content: center; }
+    display: flex;
+    justify-content: center;
+    width: 25px; }
     @media (min-width: 768px) {
       header div #logo-container img {
         width: initial; } }
   header div #name-container h6 {
-    font-family: 'Mukta', sans-serif;
-    font-weight: 600;
     color: #474747;
+    font-family: 'Mukta', sans-serif;
     font-size: 1rem;
+    font-weight: 600;
     text-align: center; }
   header div #burger-container {
-    font-size: 1.25rem;
+    align-items: center;
     color: #D66969;
     display: flex;
-    align-items: center;
+    font-size: 1.25rem;
     justify-content: flex-end; }
 
 /* =============
     Footer
 ============= */
+footer div {
+  background-color: #FFF6E6;
+  padding: 120px 15px 50px 15px; }
+  footer div h6, footer div p {
+    font-family: 'Mukta', sans-serif;
+    font-size: 1rem;
+    font-weight: 500; }
+  footer div #footer-text-1 h6 {
+    color: #D66969; }
+  footer div #footer-text-1 p {
+    color: #626262; }
+  footer div #icons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 10px; }
+    footer div #icons #social-media {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-right: 15px; }
+      footer div #icons #social-media li {
+        margin: 0px 5px 0px 0px; }
+        footer div #icons #social-media li a:link, footer div #icons #social-media li a:visited {
+          color: #000;
+          font-size: 1.25rem; }
+          footer div #icons #social-media li a:link:hover, footer div #icons #social-media li a:link:active, footer div #icons #social-media li a:visited:hover, footer div #icons #social-media li a:visited:active {
+            color: #D66969; }
+    footer div #icons #payment {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      footer div #icons #payment li {
+        font-size: 1.25rem;
+        margin: 0px 5px 0px 0px; }
+  footer div #footer-text-2 h6 {
+    color: #4C5278; }
+  footer div #footer-text-2 p {
+    color: #B29C70; }
