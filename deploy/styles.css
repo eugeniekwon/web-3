@@ -317,6 +317,16 @@ template {
 /* =============
     Base
 ============= */
+.grid-container {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". container ."; }
+  @media (min-width: 1440px) {
+    .grid-container {
+      grid-template-columns: auto 1440px auto; } }
+  .grid-container > div {
+    grid-area: container; }
+
 /* =============
     Typography
 ============= */

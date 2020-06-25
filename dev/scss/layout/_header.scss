@@ -1,3 +1,45 @@
 /* =============
     Header
 ============= */
+header{
+    div{
+
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 20px 0px;
+
+        #logo-container{
+            img{
+               width: 25px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+
+               @include md{
+                   width: initial;
+               }
+
+            }
+        }
+
+        #name-container{
+            h6{
+                font-family: 'Mukta', sans-serif;
+                font-weight: 600;
+                color: $dark-gray;
+                font-size: rem-calc(16);
+
+                text-align: center;
+
+            }
+        }
+
+        #burger-container{
+            font-size: rem-calc(20);
+            color: $pink;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+}

@@ -19,6 +19,27 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/header/logo.png": {
+		"ft": 32768,
+		"iS": 532,
+		"oA": 0,
+		"oAP": "/deploy/img/header/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/header/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/header/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -240,7 +261,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/deploy/styles.css",
+		"oAP": "/deploy/css/styles.css",
 		"oF": 2,
 		"oS": 0,
 		"uL": 1

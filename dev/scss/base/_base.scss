@@ -3,3 +3,21 @@
 ============= */
 
 
+.grid-container{
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". container .";
+
+    @include xl{
+        grid-template-columns: auto 1440px auto;
+    }
+
+    >div{
+        grid-area: container;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    padding: 0px;
+    margin: 0px;
+}
