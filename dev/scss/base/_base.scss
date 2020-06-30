@@ -79,3 +79,20 @@ h1, h2, h3, h4, h5, h6, p{
     margin-bottom: 20px;
     }
 }
+
+
+.show-for-mobile {
+    display: flex !important;
+
+    @include md {
+        display: none !important;
+    }
+}
+
+.show-for-tablet {
+    display: none !important;
+
+    @include md {
+        display: flex !important;
+    }
+}

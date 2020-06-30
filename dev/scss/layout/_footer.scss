@@ -1,80 +1,136 @@
 /* =============
     Footer
 ============= */
-footer{
-    div{
+footer {
 
         background-color: $cream;
         padding: 120px 15px 50px 15px;
 
-        h6, p{
+        h6,
+        p {
             font-family: 'Mukta', sans-serif;
             font-size: rem-calc(16);
             font-weight: 500;
         }
 
-        #footer-text-1{
-
-            h6{
-                color: $pink;
-            }
-
-            p{
-                color: $light-gray;
-            }
-            
+    >div {
+        @include lg{
+            margin-left: 43px;
         }
 
-        #icons{
+        #footer-total-text{
 
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
-            margin-right: 10px;
-
-            #social-media{
-            
+            @include lg{
                 display: flex;
+                align-items: flex-start;
                 justify-content: flex-start;
-                align-items: center;
-                margin-right: 15px;
-                    
-                    li{
-                        margin: 0px 5px 0px 0px;
+            }
+            
+            #footer-text-1 {
+
+                h6 {
+                    color: $pink;
+                }
     
-                        a:link,a:visited{
-                            color: $black;
-                            font-size: rem-calc(20);
+                p {
+                    color: $light-gray;
+                }
+
+                @include lg{
+                    margin-right: 138px;
+                }
     
-                            &:hover,&:active{
-                                color: $pink;
-                            }
+
+                >div{
+                    @include lg{
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+
+                        p:nth-child(1){
+                            margin-right: 60px;
                         }
                     }
+                }
             }
     
-            #payment{
+            #footer-text{
     
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
                 
-                    li{
-                        font-size: rem-calc(20);
-                        margin: 0px 5px 0px 0px;
+
+                h6 {
+                    color: $dark-violet;
+                    
+                }
+    
+                p {
+                    color: $brown;
+                }
+    
+                @include md {
+                    display: flex;
+                    align-items: auto;
+                    justify-content: flex-start;
+    
+                    >div {
+                        margin-right: 60px;
                     }
+                }
+
+                @include lg{
+                    margin-top: 50px;
+                    margin-right: 0px;
+                }
+
+                
+    
+            }
+        }
+        
+
+        #social-media {
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-right: 15px;
+
+            li {
+                margin: 0px 10px 0px 0px;
+
+                a:link,
+                a:visited {
+                    color: $black;
+                    font-size: rem-calc(20);
+                    text-decoration: none;
+
+                    @include lg{
+                        font-size: rem-calc(25);
+                        margin: 0px 10px 0px 0px;
+                    }
+
+                    &:hover,
+                    &:active {
+                        color: $pink;
+                    }
+                }
             }
         }
 
-        
+        #payment {
 
-        #footer-text-2{
-            h6{
-                color: $dark-violet;
-            }
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
 
-            p{
-                color: $brown;
+            li {
+                font-size: rem-calc(20);
+                margin: 0px 5px 0px 0px;
+
+                @include lg{
+                    font-size: rem-calc(25);
+                    margin: 0px 10px 0px 0px;
+                }
             }
         }
 

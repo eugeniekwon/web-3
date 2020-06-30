@@ -369,12 +369,58 @@ h1, h2, h3, h4, h5, h6, p {
   @media (min-width: 768px) {
     .xs-spacing {
       margin-bottom: 20px; } }
+.show-for-mobile {
+  display: flex !important; }
+  @media (min-width: 768px) {
+    .show-for-mobile {
+      display: none !important; } }
+.show-for-tablet {
+  display: none !important; }
+  @media (min-width: 768px) {
+    .show-for-tablet {
+      display: flex !important; } }
 /* =============
     Typography
 ============= */
 /* =============
     Buttons
 ============= */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 600;
+  font-size: 1rem; }
+  .button a:link,
+  .button a:visited {
+    background-color: #E5892A;
+    border-radius: 30px;
+    color: #fff;
+    padding: 20px 50px;
+    transition: 0.25s; }
+  .button a:hover,
+  .button a:active {
+    background-color: #C66E15; }
+
+.button-sg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 600;
+  font-size: 1rem; }
+  .button-sg a:link,
+  .button-sg a:visited {
+    background-color: #E5892A;
+    border-radius: 30px;
+    color: #fff;
+    padding: 20px 20px;
+    transition: 0.25s; }
+  .button-sg a:hover,
+  .button-sg a:active {
+    background-color: #C66E15; }
+
 /* =============
     Forms
 ============= */
@@ -408,12 +454,16 @@ header div {
     @media (min-width: 768px) {
       header div #logo-container img {
         width: initial; } }
-  header div #name-container h6 {
-    color: #474747;
-    font-family: 'Mukta', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center; }
+  header div #name-container {
+    align-items: center;
+    display: flex;
+    justify-content: center; }
+    header div #name-container h6 {
+      color: #474747;
+      font-family: 'Mukta', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center; }
   header div #burger-container {
     align-items: center;
     color: #D66969;
@@ -424,42 +474,80 @@ header div {
 /* =============
     Footer
 ============= */
-footer div {
+footer {
   background-color: #FFF6E6;
   padding: 120px 15px 50px 15px; }
-  footer div h6, footer div p {
+  footer h6,
+  footer p {
     font-family: 'Mukta', sans-serif;
     font-size: 1rem;
     font-weight: 500; }
-  footer div #footer-text-1 h6 {
+  @media (min-width: 1025px) {
+    footer > div {
+      margin-left: 43px; } }
+  @media (min-width: 1025px) {
+    footer > div #footer-total-text {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start; } }
+  footer > div #footer-total-text #footer-text-1 h6 {
     color: #D66969; }
-  footer div #footer-text-1 p {
+  footer > div #footer-total-text #footer-text-1 p {
     color: #626262; }
-  footer div #icons {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin-right: 10px; }
-    footer div #icons #social-media {
+  @media (min-width: 1025px) {
+    footer > div #footer-total-text #footer-text-1 {
+      margin-right: 138px; } }
+  @media (min-width: 1025px) {
+    footer > div #footer-total-text #footer-text-1 > div {
       display: flex;
-      justify-content: flex-start;
       align-items: center;
-      margin-right: 15px; }
-      footer div #icons #social-media li {
-        margin: 0px 5px 0px 0px; }
-        footer div #icons #social-media li a:link, footer div #icons #social-media li a:visited {
-          color: #000;
-          font-size: 1.25rem; }
-          footer div #icons #social-media li a:link:hover, footer div #icons #social-media li a:link:active, footer div #icons #social-media li a:visited:hover, footer div #icons #social-media li a:visited:active {
-            color: #D66969; }
-    footer div #icons #payment {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center; }
-      footer div #icons #payment li {
-        font-size: 1.25rem;
-        margin: 0px 5px 0px 0px; }
-  footer div #footer-text-2 h6 {
+      justify-content: flex-start; }
+      footer > div #footer-total-text #footer-text-1 > div p:nth-child(1) {
+        margin-right: 60px; } }
+  footer > div #footer-total-text #footer-text h6 {
     color: #4C5278; }
-  footer div #footer-text-2 p {
+  footer > div #footer-total-text #footer-text p {
     color: #B29C70; }
+  @media (min-width: 768px) {
+    footer > div #footer-total-text #footer-text {
+      display: flex;
+      align-items: auto;
+      justify-content: flex-start; }
+      footer > div #footer-total-text #footer-text > div {
+        margin-right: 60px; } }
+  @media (min-width: 1025px) {
+    footer > div #footer-total-text #footer-text {
+      margin-top: 50px;
+      margin-right: 0px; } }
+  footer > div #social-media {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 15px; }
+    footer > div #social-media li {
+      margin: 0px 10px 0px 0px; }
+      footer > div #social-media li a:link,
+      footer > div #social-media li a:visited {
+        color: #000;
+        font-size: 1.25rem;
+        text-decoration: none; }
+        @media (min-width: 1025px) {
+          footer > div #social-media li a:link,
+          footer > div #social-media li a:visited {
+            font-size: 1.5625rem;
+            margin: 0px 10px 0px 0px; } }
+        footer > div #social-media li a:link:hover, footer > div #social-media li a:link:active,
+        footer > div #social-media li a:visited:hover,
+        footer > div #social-media li a:visited:active {
+          color: #D66969; }
+  footer > div #payment {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    footer > div #payment li {
+      font-size: 1.25rem;
+      margin: 0px 5px 0px 0px; }
+      @media (min-width: 1025px) {
+        footer > div #payment li {
+          font-size: 1.5625rem;
+          margin: 0px 10px 0px 0px; } }
