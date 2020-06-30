@@ -311,12 +311,192 @@ template {
 /* =============
     Base
 ============= */
+<<<<<<< Updated upstream
+=======
+ul {
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
+a:link, a:visited {
+  text-decoration: none;
+  transition: 0.25s; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". container ."; }
+  @media (min-width: 1440px) {
+    .grid-container {
+      grid-template-columns: auto 1200px auto; } }
+  .grid-container > div {
+    grid-area: container; }
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0px;
+  margin: 0px; }
+
+.header-spacing {
+  margin-top: 80px; }
+
+.big-spacing {
+  margin-bottom: 110px; }
+  @media (min-width: 768px) {
+    .big-spacing {
+      margin-bottom: 145px; } }
+  @media (min-width: 1025px) {
+    .big-spacing {
+      margin-bottom: 160px; } }
+.medium-spacing {
+  margin-bottom: 40px; }
+  @media (min-width: 768px) {
+    .medium-spacing {
+      margin-bottom: 60px; } }
+  @media (min-width: 1025px) {
+    .medium-spacing {
+      margin-bottom: 75px; } }
+.small-spacing {
+  margin-bottom: 25px; }
+  @media (min-width: 768px) {
+    .small-spacing {
+      margin-bottom: 35px; } }
+  @media (min-width: 1025px) {
+    .small-spacing {
+      margin-bottom: 45px; } }
+.xs-spacing {
+  margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    .xs-spacing {
+      margin-bottom: 20px; } }
+.show-for-mobile {
+  display: flex !important; }
+  @media (min-width: 768px) {
+    .show-for-mobile {
+      display: none !important; } }
+.show-for-tablet {
+  display: none !important; }
+  @media (min-width: 768px) {
+    .show-for-tablet {
+      display: flex !important; } }
+.line {
+  border-top: 3px solid #8186A5;
+  width: 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end; }
+  @media (min-width: 768px) {
+    .line {
+      border-top: 5px solid #8186A5;
+      width: 200px; } }
+  @media (min-width: 1025px) {
+    .line {
+      border-top: 5px solid #8186A5;
+      width: 260px; } }
+>>>>>>> Stashed changes
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+  ul li {
+    list-style: none; }
+
+.heading {
+  font-family: 'Mukta', sans-serif;
+  font-size: 2.5rem;
+  line-height: 3.4375rem;
+  font-weight: 700;
+  color: #D66969; }
+  @media (min-width: 768px) {
+    .heading {
+      font-size: 2.8125rem;
+      line-height: 3.75rem; } }
+  @media (min-width: 1025px) {
+    .heading {
+      font-size: 3.125rem;
+      line-height: 4.375rem; } }
+  .heading span {
+    display: block; }
+
+.subheading {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.5625rem;
+  line-height: 2.0625rem;
+  font-weight: 600;
+  color: #796B4F; }
+  @media (min-width: 768px) {
+    .subheading {
+      font-size: 1.75rem;
+      line-height: 2.25rem; } }
+  @media (min-width: 1025px) {
+    .subheading {
+      font-size: 1.875rem;
+      line-height: 2.375rem; } }
+  .subheading span {
+    display: block; }
+
+.body-text {
+  font-family: 'Mukta', sans-serif;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  color: #474747;
+  text-align: justify; }
+  @media (min-width: 1025px) {
+    .body-text {
+      font-size: 1.125rem;
+      line-height: 1.9375rem;
+      text-align: left; } }
+  .body-text span {
+    display: block; }
+
 /* =============
     Buttons
 ============= */
+<<<<<<< Updated upstream
+=======
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 600;
+  font-size: 1rem; }
+  .button a:link,
+  .button a:visited {
+    background-color: #E5892A;
+    border-radius: 30px;
+    color: #fff;
+    padding: 10px 20px;
+    transition: 0.25s; }
+  .button a:hover,
+  .button a:active {
+    background-color: #C66E15; }
+
+.button-sg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 600;
+  font-size: 1rem; }
+  .button-sg a:link,
+  .button-sg a:visited {
+    background-color: #E5892A;
+    border-radius: 30px;
+    color: #fff;
+    padding: 20px 20px;
+    transition: 0.25s; }
+  .button-sg a:hover,
+  .button-sg a:active {
+    background-color: #C66E15; }
+
+>>>>>>> Stashed changes
 /* =============
     Forms
 ============= */
@@ -338,6 +518,139 @@ textarea {
 /* =============
     Header
 ============= */
+<<<<<<< Updated upstream
 /* =============
     Footer
 ============= */
+=======
+header > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 0px;
+  position: fixed;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000; }
+  header > div #logo-container img {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 25px;
+    padding-left: 15px; }
+    @media (min-width: 768px) {
+      header > div #logo-container img {
+        width: initial; } }
+  header > div #name-container {
+    align-items: center;
+    display: flex;
+    justify-content: center; }
+    header > div #name-container h6 {
+      color: #474747;
+      font-family: 'Mukta', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center; }
+  header > div #burger-container {
+    align-items: center;
+    color: #D66969;
+    display: flex;
+    font-size: 1.25rem;
+    justify-content: flex-end;
+    padding-right: 15px; }
+
+/* =============
+    Footer
+============= */
+footer {
+  background-color: #FFF6E6;
+  padding: 120px 15px 50px 15px; }
+  footer h6,
+  footer p {
+    font-family: 'Mukta', sans-serif;
+    font-size: 1rem;
+    font-weight: 500; }
+  @media (min-width: 1025px) {
+    footer > div {
+      margin-left: 43px; } }
+  @media (min-width: 1025px) {
+    footer > div #footer-total-text {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start; } }
+  footer > div #footer-total-text #footer-text-1 h6 {
+    color: #D66969; }
+  footer > div #footer-total-text #footer-text-1 p {
+    color: #626262; }
+  @media (min-width: 1025px) {
+    footer > div #footer-total-text #footer-text-1 {
+      margin-right: 138px; } }
+  @media (min-width: 1025px) {
+    footer > div #footer-total-text #footer-text-1 > div {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; }
+      footer > div #footer-total-text #footer-text-1 > div p:nth-child(1) {
+        margin-right: 60px; } }
+  footer > div #footer-total-text #footer-text h6 {
+    color: #4C5278; }
+  footer > div #footer-total-text #footer-text p {
+    color: #B29C70; }
+  @media (min-width: 768px) {
+    footer > div #footer-total-text #footer-text {
+      display: flex;
+      align-items: auto;
+      justify-content: flex-start; }
+      footer > div #footer-total-text #footer-text > div {
+        margin-right: 60px; } }
+  @media (min-width: 1025px) {
+    footer > div #footer-total-text #footer-text {
+      margin-top: 50px;
+      margin-right: 0px; } }
+  footer > div #social-media {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 15px; }
+    footer > div #social-media li {
+      margin: 0px 10px 0px 0px; }
+      footer > div #social-media li a:link,
+      footer > div #social-media li a:visited {
+        color: #000;
+        font-size: 1.25rem;
+        text-decoration: none; }
+        @media (min-width: 1025px) {
+          footer > div #social-media li a:link,
+          footer > div #social-media li a:visited {
+            font-size: 1.5625rem;
+            margin: 0px 10px 0px 0px; } }
+        footer > div #social-media li a:link:hover, footer > div #social-media li a:link:active,
+        footer > div #social-media li a:visited:hover,
+        footer > div #social-media li a:visited:active {
+          color: #D66969; }
+  footer > div #payment {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    footer > div #payment li {
+      font-size: 1.25rem;
+      margin: 0px 5px 0px 0px; }
+      @media (min-width: 1025px) {
+        footer > div #payment li {
+          font-size: 1.5625rem;
+          margin: 0px 10px 0px 0px; } }
+/* =============
+    Index
+============= */
+#home > div #home-hours-text p:nth-child(7) {
+  color: #D66969; }
+
+#home > div #home-gallery-1 img {
+  object-fit: cover;
+  width: 100vw; }
+
+#home > div #home-gallery-2 img {
+  object-fit: cover;
+  width: 100vw; }
+>>>>>>> Stashed changes

@@ -3,3 +3,120 @@
 ============= */
 
 
+<<<<<<< Updated upstream
+=======
+    }
+}
+
+a:link,a:visited{
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". container .";
+
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
+
+    >div{
+        grid-area: container;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    padding: 0px;
+    margin: 0px;
+}
+
+.header-spacing{
+    margin-top: 80px;
+}
+
+
+.big-spacing{
+    margin-bottom: 110px;
+
+    @include md{
+        margin-bottom: 145px;
+    }
+
+    @include lg{
+        margin-bottom: 160px;
+    }
+}
+
+.medium-spacing{
+    margin-bottom: 40px;
+
+    @include md{
+        margin-bottom: 60px;
+    }
+
+    @include lg{
+        margin-bottom: 75px;
+    }
+}
+
+.small-spacing{
+    margin-bottom: 25px;
+
+    @include md{
+        margin-bottom: 35px;
+    }
+
+    @include lg{
+        margin-bottom: 45px;
+    }
+}
+
+.xs-spacing{
+    margin-bottom: 10px;
+
+    @include md{
+    margin-bottom: 20px;
+    }
+}
+
+
+.show-for-mobile {
+    display: flex !important;
+
+    @include md {
+        display: none !important;
+    }
+}
+
+.show-for-tablet {
+    display: none !important;
+
+    @include md {
+        display: flex !important;
+    }
+}
+
+.line{
+
+    border-top: 3px solid $violet;
+    width: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    @include md{
+        border-top: 5px solid $violet;
+        width: 200px;
+
+    }
+
+    @include lg{
+        border-top: 5px solid $violet;
+        width: 260px;
+    }
+        
+
+}
+>>>>>>> Stashed changes

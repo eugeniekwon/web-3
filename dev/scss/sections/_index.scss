@@ -1,0 +1,43 @@
+/* =============
+    Index
+============= */
+
+#home{
+    >div{
+
+        // #home-carousel{
+        //     div{
+
+        //     }
+        // }
+
+        #home-hours-text{
+            p:nth-child(7){
+                color: $pink;
+            }
+        }
+
+        #home-gallery-1{
+            img{
+                object-fit: cover;
+                width: 100vw;
+            }
+        }
+
+        #home-gallery-2{
+            img{
+                object-fit: cover;
+                width: 100vw;
+            }
+        }
+
+
+
+
+
+
+    }
+
+
+
+}

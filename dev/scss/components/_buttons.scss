@@ -1,3 +1,54 @@
 /* =============
     Buttons
 ============= */
+<<<<<<< Updated upstream
+=======
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    font-size: rem-calc(16);
+
+    a:link,
+    a:visited{
+        background-color: $orange;
+        border-radius: 30px;
+        color: $white;
+        padding: 10px 20px;
+        transition: 0.25s;
+    }
+
+    a:hover,
+    a:active{
+        background-color: $dark-orange;
+    }
+
+}
+
+.button-sg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    font-size: rem-calc(16);
+
+    a:link,
+    a:visited{
+        background-color: $orange;
+        border-radius: 30px;
+        color: $white;
+        padding: 20px 20px;
+        transition: 0.25s;
+    }
+
+    a:hover,
+    a:active{
+        background-color: $dark-orange;
+    }
+
+}
+>>>>>>> Stashed changes

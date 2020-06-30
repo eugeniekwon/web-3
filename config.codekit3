@@ -19,6 +19,92 @@
 		"oF": 0,
 		"oS": 3
 		},
+<<<<<<< Updated upstream
+=======
+	"/deploy/img/graphics/triangle.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/graphics/triangle.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/header/logo.png": {
+		"ft": 32768,
+		"iS": 532,
+		"oA": 0,
+		"oAP": "/deploy/img/header/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/header/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/header/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/index/h1.jpg": {
+		"ft": 16384,
+		"iS": 113236,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/index/h1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/index/h2.jpg": {
+		"ft": 16384,
+		"iS": 49073,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/index/h2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/index/h3.jpg": {
+		"ft": 16384,
+		"iS": 96248,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/index/h3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/index/h4.jpg": {
+		"ft": 16384,
+		"iS": 123557,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/index/h4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/index-1.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/index-1.html",
+		"oF": 0
+		},
+>>>>>>> Stashed changes
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -82,6 +168,14 @@
 		"oA": 1,
 		"oAP": "/dev/global/scripts.html",
 		"oF": 0
+		},
+	"/dev/index-1.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/deploy/index-1.html",
+		"oF": 2
 		},
 	"/dev/index.kit": {
 		"cB": 0,
@@ -228,6 +322,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/layout/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_index.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_index.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
