@@ -11,10 +11,14 @@
         //     }
         // }
 
-        #home-hours-text{
-            p:nth-child(7){
-                color: $pink;
+        #home-intro-text{
+            @include md{
+                margin-right: 380px;
             }
+
+            
+
+
         }
 
         #home-gallery-1{
@@ -22,8 +26,54 @@
                 object-fit: cover;
                 width: 100vw;
             }
+
+            // @include md{
+            //     display: grid;
+            //     grid-template-columns: repeat(2,1fr);
+            //     grid-template-areas: "h1 h2";
+            //     width: 100vw;
+
+            //     #h1{
+            //         grid-area: h1;
+            //     }
+    
+            //     #h2{
+            //         grid-area: h2;
+            //     }
+            // }
+
+            
         }
 
+        #home-hours-text{
+            >div{
+                @include md{
+                    margin: 0px 50px;
+                }
+
+                ul{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-areas: "day hours";
+                    column-gap: 25px;
+
+                    li:nth-child(1){
+                        grid-area: day;
+                    }
+    
+                    li:nth-child(2){
+                        grid-area: hours;
+
+                        p:nth-child(2){
+                            color: $pink;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        
         #home-gallery-2{
             img{
                 object-fit: cover;

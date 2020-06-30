@@ -13,6 +13,10 @@ a:link,a:visited{
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". container .";
 
+    @include md{
+        grid-template-columns: 25px auto 25px;
+    }
+
     @include xl{
         grid-template-columns: auto 1200px auto;
     }

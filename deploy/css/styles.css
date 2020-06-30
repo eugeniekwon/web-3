@@ -325,6 +325,9 @@ a:link, a:visited {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". container ."; }
+  @media (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: 25px auto 25px; } }
   @media (min-width: 1440px) {
     .grid-container {
       grid-template-columns: auto 1200px auto; } }
@@ -531,7 +534,8 @@ header > div {
     padding-left: 15px; }
     @media (min-width: 768px) {
       header > div #logo-container img {
-        width: initial; } }
+        width: initial;
+        padding-left: 25px; } }
   header > div #name-container {
     align-items: center;
     display: flex;
@@ -549,7 +553,9 @@ header > div {
     font-size: 1.25rem;
     justify-content: flex-end;
     padding-right: 15px; }
-
+    @media (min-width: 768px) {
+      header > div #burger-container {
+        padding-right: 25px; } }
 /* =============
     Footer
 ============= */
@@ -633,12 +639,29 @@ footer {
 /* =============
     Index
 ============= */
-#home > div #home-hours-text p:nth-child(7) {
-  color: #D66969; }
+@media (min-width: 768px) {
+  #home > div #home-intro-text {
+    margin-right: 380px; } }
 
 #home > div #home-gallery-1 img {
   object-fit: cover;
   width: 100vw; }
+
+@media (min-width: 768px) {
+  #home > div #home-hours-text > div {
+    margin: 0px 50px; } }
+
+#home > div #home-hours-text > div ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "day hours";
+  column-gap: 25px; }
+  #home > div #home-hours-text > div ul li:nth-child(1) {
+    grid-area: day; }
+  #home > div #home-hours-text > div ul li:nth-child(2) {
+    grid-area: hours; }
+    #home > div #home-hours-text > div ul li:nth-child(2) p:nth-child(2) {
+      color: #D66969; }
 
 #home > div #home-gallery-2 img {
   object-fit: cover;
