@@ -1,3 +1,139 @@
 /* =============
     Footer
 ============= */
+
+footer {
+
+    background-color: $cream;
+    padding: 120px 15px 50px 15px;
+
+    h6,
+    p {
+        font-family: 'Mukta', sans-serif;
+        font-size: rem-calc(16);
+        font-weight: 500;
+    }
+
+>div {
+    @include lg{
+        margin-left: 43px;
+    }
+
+    #footer-total-text{
+
+        @include lg{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        
+        #footer-text-1 {
+
+            h6 {
+                color: $pink;
+            }
+
+            p {
+                color: $light-gray;
+            }
+
+            @include lg{
+                margin-right: 138px;
+            }
+
+
+            >div{
+                @include lg{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    p:nth-child(1){
+                        margin-right: 60px;
+                    }
+                }
+            }
+        }
+
+        #footer-text{
+
+            
+
+            h6 {
+                color: $dark-violet;
+                
+            }
+
+            p {
+                color: $brown;
+            }
+
+            @include md {
+                display: flex;
+                align-items: auto;
+                justify-content: flex-start;
+
+                >div {
+                    margin-right: 60px;
+                }
+            }
+
+            @include lg{
+                margin-top: 50px;
+                margin-right: 0px;
+            }
+
+            
+
+        }
+    }
+    
+
+    #social-media {
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: 15px;
+
+        li {
+            margin: 0px 10px 0px 0px;
+
+            a:link,
+            a:visited {
+                color: $black;
+                font-size: rem-calc(20);
+                text-decoration: none;
+
+                @include lg{
+                    font-size: rem-calc(25);
+                    margin: 0px 10px 0px 0px;
+                }
+
+                &:hover,
+                &:active {
+                    color: $pink;
+                }
+            }
+        }
+    }
+
+    #payment {
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        li {
+            font-size: rem-calc(20);
+            margin: 0px 5px 0px 0px;
+
+            @include lg{
+                font-size: rem-calc(25);
+                margin: 0px 10px 0px 0px;
+            }
+        }
+    }
+
+}
+}
