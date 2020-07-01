@@ -12,35 +12,92 @@
         // }
 
         #home-intro-text{
-            @include md{
-                margin-right: 380px;
-            }
-
             
+            >div{
 
+                @include md{
+                    margin-right: 380px;
+                }
+
+                @include lg{
+                    margin-left: 100px;
+                    margin-right: 370px;
+                }
+
+                @include xl{
+                    margin-left: 0px;
+                }
+
+            }
 
         }
 
         #home-gallery-1{
-            img{
-                object-fit: cover;
-                width: 100vw;
+
+            >div{
+                @include md{
+                    display: grid;
+                    grid-template-columns: 55% auto;
+                    grid-template-areas: "h1 h2";
+                    column-gap: 20px;
+                }
+    
+                @include lg{
+                    grid-template-columns: 60% auto;
+                    column-gap: 20px;
+                }
+    
+                #h1{
+                    background-image: url("../img/index/h1.jpg");
+                    background-position: center;
+                    background-repeat: none;
+                    background-size: cover;
+                    height: 65vh;
+    
+                    grid-area: h1;
+    
+                    @include md{
+                        height: 47vh;
+                    }
+    
+                    @include lg{
+                        height: 80vh;
+                        background-position: center;
+                    }
+    
+                    @include xl{
+                        height: 120vh;
+                        background-size: 110%;
+                        background-position: 0px -280px;
+                    }
+                }
+    
+                #h2{
+                    background-image: url("../img/index/h2.jpg");
+                    background-position: center;
+                    background-repeat: none;
+                    background-size: cover;
+                    height: 65vh;
+                    
+                    grid-area: h2;
+    
+                    @include md{
+                        height: 47vh;
+                        background-position: 0px -70px;
+                    }
+    
+                    @include lg{
+                        height: 80vh;
+                        background-position: center;
+                    }
+    
+                    @include xl{
+                        height: 120vh;
+                    }
+                }
             }
 
-            // @include md{
-            //     display: grid;
-            //     grid-template-columns: repeat(2,1fr);
-            //     grid-template-areas: "h1 h2";
-            //     width: 100vw;
-
-            //     #h1{
-            //         grid-area: h1;
-            //     }
-    
-            //     #h2{
-            //         grid-area: h2;
-            //     }
-            // }
+            
 
             
         }
@@ -68,6 +125,8 @@
                             color: $pink;
                         }
                     }
+
+                    
                 }
             }
             
@@ -75,16 +134,73 @@
 
         
         #home-gallery-2{
-            img{
-                object-fit: cover;
-                width: 100vw;
+
+            >div{
+                @include md{
+                    display: grid;
+                    grid-template-columns: auto 55%;
+                    grid-template-areas: "h3 h4";
+                    column-gap: 20px;
+                }
+    
+                @include lg{
+                    grid-template-columns: 40% auto;
+                    column-gap: 20px;
+                }
+    
+                #h3{
+                    background-image: url("../img/index/h3.jpg");
+                    background-position: center;
+                    background-repeat: none;
+                    background-size: 240%;
+                    height: 65vh;
+    
+                    grid-area: h3;
+    
+                    @include md{
+                        height: 47vh;
+                    }
+    
+                    @include lg{
+                        height: 80vh;
+                        background-size: cover;
+                    }
+    
+                    @include xl{
+                        height: 120vh;
+                        background-size: cover;
+    
+                    }
+                }
+    
+                #h4{
+                    background-image: url("../img/index/h4.jpg");
+                    background-position: center;
+                    background-repeat: none;
+                    background-size: cover;
+                    height: 65vh;
+                    
+                    grid-area: h4;
+    
+                    @include md{
+                        height: 47vh;
+                    }
+    
+                    @include lg{
+                        height: 80vh;
+                    }
+    
+                    @include xl{
+                        height: 120vh;
+                    }
+                }
+                
             }
+
+            
+
+
         }
-
-
-
-
-
 
     }
 
