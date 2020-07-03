@@ -50,7 +50,8 @@
 
                     @include lg{
                         grid-template-columns: 262px 300px 422px;
-                        grid-template-rows: 330px 470px 210px 330px;
+                        grid-template-rows: 
+                        330px 470px 210px 330px;
                         grid-template-areas: 
                         "g1 g2 g3"
                         "g4 g4 g5"
