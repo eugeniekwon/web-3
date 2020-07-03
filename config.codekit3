@@ -69,6 +69,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/index/h3.jpg": {
+		"ft": 16384,
+		"iS": 797316,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/index/h3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/index/h4.jpg": {
+		"ft": 16384,
+		"iS": 1003351,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/index/h4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index-1.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -117,6 +139,30 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/dev/content/gallery-1.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/gallery-1.html",
+		"oF": 0
+		},
+	"/dev/content/index-1.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/index-1.html",
+		"oF": 2
+		},
+	"/dev/gallery.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/gallery.html",
+		"oF": 2
+		},
 	"/dev/global/footer.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -148,14 +194,6 @@
 		"oA": 1,
 		"oAP": "/dev/global/scripts.html",
 		"oF": 0
-		},
-	"/dev/index-1.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/deploy/index-1.html",
-		"oF": 2
 		},
 	"/dev/index.kit": {
 		"cB": 0,
