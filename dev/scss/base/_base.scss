@@ -106,13 +106,23 @@ h1, h2, h3, h4, h5, h6, p{
     }
 }
 
-.show-for-tablet {
-    display: none !important;
+.show-for-md{
+    display: none;
 
-    @include md {
-        display: flex !important;
+    @include md{
+        display: block;
     }
 }
+
+.show-for-lg{
+    display: none;
+    
+    @include lg{
+        display: block;
+    }
+}
+
+
 
 .line{
 

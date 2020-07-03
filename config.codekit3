@@ -27,6 +27,102 @@
 		"oAP": "/deploy/footer.html",
 		"oF": 0
 		},
+	"/deploy/gallery.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/gallery.html",
+		"oF": 0
+		},
+	"/deploy/img/gallery/g1.jpg": {
+		"ft": 16384,
+		"iS": 1015841,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/g1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/g2.jpg": {
+		"ft": 16384,
+		"iS": 445836,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/g2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/g3.jpg": {
+		"ft": 16384,
+		"iS": 395835,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/g3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/g4.jpg": {
+		"ft": 16384,
+		"iS": 273550,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/g4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/g5.jpg": {
+		"ft": 16384,
+		"iS": 276950,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/g5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/g6.jpg": {
+		"ft": 16384,
+		"iS": 215517,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/g6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/g7.jpg": {
+		"ft": 16384,
+		"iS": 362629,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/g7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/g8.jpg": {
+		"ft": 16384,
+		"iS": 607853,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/g8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/graphics/triangle.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -340,6 +436,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/layout/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_gallery.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_gallery.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
