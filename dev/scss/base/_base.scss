@@ -106,9 +106,29 @@ h1, h2, h3, h4, h5, h6, p{
     }
 }
 
+.show-for-tablet {
+    display: none !important;
+
+    @include md {
+        display: flex !important;
+    }
+
+    @include lg {
+        display: none !important;
+    }
+}
+
+.show-for-desktop {
+    display: none !important;
+
+    @include lg {
+        display: flex !important;
+    }
+}
+
 .show-for-md{
     display: none;
-
+    
     @include md{
         display: block;
     }
