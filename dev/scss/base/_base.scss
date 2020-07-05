@@ -148,19 +148,25 @@ h1, h2, h3, h4, h5, h6, p{
 
     border-top: 3px solid $violet;
     width: 100px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    // display: flex;
+    // align-items: flex-end;
+    // justify-content: flex-end;
+    margin-top: 110px;
+    margin-bottom: 40px;
 
     @include md{
         border-top: 5px solid $violet;
         width: 200px;
+        margin-top: 145px;
+        margin-bottom: 60px;
 
     }
 
     @include lg{
         border-top: 5px solid $violet;
         width: 340px;
+        margin-top: 160px;
+        margin-bottom: 50px;
     }
         
 

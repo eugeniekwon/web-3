@@ -1,0 +1,12 @@
+/* =============
+    Fancybox
+============= */
+
+.fancybox-button, .fancybox-button:link, .fancybox-button:visited {
+    color: $light-gray;
+}
+
+.fancybox-caption, .fancybox-infobar, .fancybox-navigation .fancybox-button, .fancybox-toolbar {
+    opacity: 0.5;
+    visibility: hidden;
+}

@@ -7,7 +7,12 @@ footer {
     background-color: $cream;
     padding: 120px 15px 50px 15px;
 
-    h6,
+    h6{
+        font-family: 'Mukta', sans-serif;
+        font-size: rem-calc(16);
+        font-weight: 600;
+    }
+
     p {
         font-family: 'Mukta', sans-serif;
         font-size: rem-calc(16);

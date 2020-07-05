@@ -412,17 +412,20 @@ h1, h2, h3, h4, h5, h6, p {
 .line {
   border-top: 3px solid #8186A5;
   width: 100px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end; }
+  margin-top: 110px;
+  margin-bottom: 40px; }
   @media (min-width: 768px) {
     .line {
       border-top: 5px solid #8186A5;
-      width: 200px; } }
+      width: 200px;
+      margin-top: 145px;
+      margin-bottom: 60px; } }
   @media (min-width: 1025px) {
     .line {
       border-top: 5px solid #8186A5;
-      width: 340px; } }
+      width: 340px;
+      margin-top: 160px;
+      margin-bottom: 50px; } }
 /* =============
     Typography
 ============= */
@@ -543,6 +546,16 @@ textarea {
     Navigation
 ============= */
 /* =============
+    Fancybox
+============= */
+.fancybox-button, .fancybox-button:link, .fancybox-button:visited {
+  color: #626262; }
+
+.fancybox-caption, .fancybox-infobar, .fancybox-navigation .fancybox-button, .fancybox-toolbar {
+  opacity: 0.5;
+  visibility: hidden; }
+
+/* =============
     Header
 ============= */
 header > div {
@@ -597,7 +610,10 @@ header > div {
 footer {
   background-color: #FFF6E6;
   padding: 120px 15px 50px 15px; }
-  footer h6,
+  footer h6 {
+    font-family: 'Mukta', sans-serif;
+    font-size: 1rem;
+    font-weight: 600; }
   footer p {
     font-family: 'Mukta', sans-serif;
     font-size: 1rem;
