@@ -1,4 +1,4 @@
-// console.log("hello");
+
 
 $('[data-fancybox="gallery-3"]').fancybox({
     // buttons: [

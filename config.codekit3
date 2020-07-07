@@ -187,6 +187,61 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/online-orders/photo-1.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/online-orders/photo-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/online-orders/photo-2.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/online-orders/photo-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/online-orders/photo-3.jpg": {
+		"ft": 16384,
+		"iS": 1598650,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/online-orders/photo-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/online-orders/photo-4.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/online-orders/photo-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/online-orders/photo-5.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/online-orders/photo-5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index-1.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -213,6 +268,14 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/deploy/online-orders.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/online-orders.html",
+		"oF": 0
 		},
 	"/deploy/scripts-min.js": {
 		"bF": 0,
@@ -250,6 +313,14 @@
 		"oA": 1,
 		"oAP": "/dev/content/index-1.html",
 		"oF": 2
+		},
+	"/dev/content/online-orders-1.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/online-orders-1.html",
+		"oF": 0
 		},
 	"/dev/gallery.kit": {
 		"cB": 0,
@@ -306,7 +377,7 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/js/fancybox-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
@@ -320,6 +391,25 @@
 		"oF": 2,
 		"sC": 3,
 		"tS": 0
+		},
+	"/dev/js/tinyslider.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/tinyslider-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/online-orders.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/online-orders.html",
+		"oF": 2
 		},
 	"/dev/scss/base/_base.scss": {
 		"aP": 0,
@@ -2014,7 +2104,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "",
+	"jsCheckerReservedNamesString": "tns",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
