@@ -5,27 +5,6 @@
 #gallery{
     >div{
 
-        #gallery-intro-text{
-            
-            >div{
-
-                @include md{
-                    margin-right: 380px;
-                }
-
-                @include lg{
-                    margin-left: 100px;
-                    margin-right: 370px;
-                }
-
-                @include xl{
-                    margin-left: 0px;
-                }
-
-            }
-
-        }
-
         #gallery-content-mobile{
             >div{
                 ul{

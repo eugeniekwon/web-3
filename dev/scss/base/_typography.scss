@@ -49,6 +49,7 @@ ul {
     line-height: rem-calc(33);
     font-weight: 600;
     color: $dark-brown;
+    text-align: left;
 
     @include md{
         font-size: rem-calc(28);

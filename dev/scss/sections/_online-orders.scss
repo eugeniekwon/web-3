@@ -1,0 +1,42 @@
+/* =============
+    Online Orders
+============= */
+
+#orders-carousel {
+    >div {
+
+        @include lg{
+            margin: 0px 42px;
+        }
+
+        @include xl{
+            margin: 0px;
+        }
+        
+        
+        .my-slider {
+
+            div {
+
+                height: 300px;
+
+                @include md{
+                    height: 480px;
+                }
+                @include lg{
+                    height: 564px;
+                }
+                
+
+                img {
+                    object-fit: cover;
+                    object-position: center;
+                    height: 100%;
+                    width: 100%;
+ 
+                }
+            }
+
+        }
+    }
+}

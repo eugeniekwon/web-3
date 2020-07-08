@@ -5,32 +5,39 @@
 #home{
     >div{
 
-        // #home-carousel{
-        //     div{
-
-        //     }
-        // }
-
-        #home-intro-text{
-            
-            >div{
-
-                @include md{
-                    margin-right: 380px;
+        #home-carousel {
+            >div {
+    
+                .my-slider-2 {
+        
+                    div {
+        
+                        height: 300px;
+        
+                        @include md{
+                            height: 480px;
+                        }
+                        @include lg{
+                            height: 580px;
+                        }
+                        @include xl{
+                            height: 660px;
+                        }
+                        
+        
+                        img {
+                            object-fit: cover;
+                            object-position: center;
+                            height: 100%;
+                            width: 100%;
+         
+                        }
+                    }
+        
                 }
-
-                @include lg{
-                    margin-left: 100px;
-                    margin-right: 370px;
-                }
-
-                @include xl{
-                    margin-left: 0px;
-                }
-
             }
-
         }
+
 
         #home-gallery-1{
 

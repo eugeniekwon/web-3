@@ -8,6 +8,23 @@ a:link,a:visited{
     transition: 0.25s;
 }
 
+.main-text-margins{
+    >div{
+        @include md{
+            margin-right: 380px;
+        }
+        
+        @include lg{
+            margin-left: 100px;
+            margin-right: 370px;
+        }
+        
+        @include xl{
+            margin-left: 0px;
+        }
+    }
+}
+
 .grid-container{
     display: grid;
     grid-template-columns: 15px auto 15px;
@@ -45,10 +62,13 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .header-spacing{
-    margin-top: 80px;
+    margin-top: 70px;
 
     @include md{
-        margin-top: 90px;
+        margin-top: 70px;
+    }
+    @include lg{
+        margin-top: 80px;
     }
 }
 

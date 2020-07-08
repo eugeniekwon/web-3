@@ -1,1 +1,0 @@
-$('[data-fancybox="gallery-3"]').fancybox({}),console.log("please work"),tns({container:".my-slider",items:5,slideBy:"page",autoplay:!0}),$(document).ready((function(){console.log("ready")}));

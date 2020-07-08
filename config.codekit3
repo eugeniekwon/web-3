@@ -187,9 +187,42 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/online-orders/photo-1.jpg": {
+	"/deploy/img/index/hero-1.jpg": {
 		"ft": 16384,
 		"iS": 0,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/index/hero-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/index/hero-2.jpg": {
+		"ft": 16384,
+		"iS": 3482183,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/index/hero-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/index/hero-3.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/index/hero-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/online-orders/photo-1.jpg": {
+		"ft": 16384,
+		"iS": 1039667,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/online-orders/photo-1.jpg",
@@ -200,7 +233,7 @@
 		},
 	"/deploy/img/online-orders/photo-2.jpg": {
 		"ft": 16384,
-		"iS": 0,
+		"iS": 875099,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/online-orders/photo-2.jpg",
@@ -211,7 +244,7 @@
 		},
 	"/deploy/img/online-orders/photo-3.jpg": {
 		"ft": 16384,
-		"iS": 1598650,
+		"iS": 505457,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/online-orders/photo-3.jpg",
@@ -222,7 +255,7 @@
 		},
 	"/deploy/img/online-orders/photo-4.jpg": {
 		"ft": 16384,
-		"iS": 0,
+		"iS": 668029,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/online-orders/photo-4.jpg",
@@ -233,7 +266,7 @@
 		},
 	"/deploy/img/online-orders/photo-5.jpg": {
 		"ft": 16384,
-		"iS": 0,
+		"iS": 615712,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/online-orders/photo-5.jpg",
@@ -241,14 +274,6 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
-		},
-	"/deploy/index-1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/deploy/index-1.html",
-		"oF": 0
 		},
 	"/deploy/index.html": {
 		"cB": 0,
@@ -277,17 +302,6 @@
 		"oAP": "/deploy/online-orders.html",
 		"oF": 0
 		},
-	"/deploy/scripts-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/deploy/scripts-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/deploy/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -304,7 +318,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/content/gallery-1.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/dev/content/index-1.kit": {
 		"cB": 0,
@@ -387,8 +401,8 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/deploy/scripts-min.js",
-		"oF": 2,
+		"oAP": "/deploy/js/scripts-min.js",
+		"oF": 3,
 		"sC": 3,
 		"tS": 0
 		},
@@ -502,6 +516,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/components/_tinyslider.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/components/_tinyslider.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/helpers/_mixins.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -580,6 +607,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/sections/_online-orders.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_online-orders.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -592,6 +632,28 @@
 		"oF": 2,
 		"oS": 0,
 		"uL": 1
+		},
+	"/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/node_modules",
+		"oF": 0
+		},
+	"/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		}
 	},
 "hooks": [
