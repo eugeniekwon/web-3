@@ -12,21 +12,18 @@ if ($('.my-slider').length > 0) {
 
     "responsive": {
       "350": {
-        edgePadding: 20,
+        edgePadding: 0,
         gutter: 20
-        //"items": 1
       },
 
       "768": {
         edgePadding: 50,
         gutter: 20
-        //"items": 1
       },
 
       "1025": {
         edgePadding: 60,
         gutter: 20
-        //"items": 1
       }
     }
   });
@@ -38,7 +35,13 @@ if ($('.index-slider').length > 0) {
     items: 1,
     navPosition: "bottom",
     controlsPosition: "bottom",
-    startIndex: 2,
+    startIndex: 0,
+    controls: false,
+    "autoplayText": [
+      "▶",
+      "❚❚"
+    ],
+    autoplayPosition: "bottom",
     autoplay: true
 
   });

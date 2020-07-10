@@ -318,7 +318,8 @@ template {
 /* =============
     Base
 ============= */
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
   transition: 0.25s; }
 
@@ -337,8 +338,8 @@ a:link, a:visited {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". container ."; }
+  grid-template-areas: ". container .";
+  grid-template-columns: 15px auto 15px; }
   @media (min-width: 768px) {
     .grid-container {
       grid-template-columns: 25px auto 25px; } }
@@ -351,15 +352,21 @@ a:link, a:visited {
 @media (min-width: 1440px) {
   .xl-photo-grid {
     display: grid;
-    grid-template-columns: auto 1440px auto;
-    grid-template-areas: ". photo-container ."; } }
+    grid-template-areas: ". photo-container .";
+    grid-template-columns: auto 1440px auto; } }
 
 .xl-photo-grid > div {
   grid-area: photo-container; }
 
-h1, h2, h3, h4, h5, h6, p {
-  padding: 0px;
-  margin: 0px; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px; }
 
 .header-spacing {
   margin-top: 70px; }
@@ -428,21 +435,21 @@ h1, h2, h3, h4, h5, h6, p {
       display: block; } }
 .line {
   border-top: 3px solid #8186A5;
-  width: 100px;
+  margin-bottom: 40px;
   margin-top: 110px;
-  margin-bottom: 40px; }
+  width: 100px; }
   @media (min-width: 768px) {
     .line {
       border-top: 5px solid #8186A5;
-      width: 200px;
+      margin-bottom: 60px;
       margin-top: 145px;
-      margin-bottom: 60px; } }
+      width: 200px; } }
   @media (min-width: 1025px) {
     .line {
       border-top: 5px solid #8186A5;
-      width: 340px;
+      margin-bottom: 50px;
       margin-top: 160px;
-      margin-bottom: 50px; } }
+      width: 340px; } }
 /* =============
     Typography
 ============= */
@@ -510,12 +517,12 @@ ul {
     Buttons
 ============= */
 .button {
-  display: flex;
   align-items: center;
-  justify-content: flex-start;
+  display: flex;
   font-family: 'Mukta', sans-serif;
+  font-size: 1rem;
   font-weight: 600;
-  font-size: 1rem; }
+  justify-content: flex-start; }
   .button a:link,
   .button a:visited {
     background-color: #E5892A;
@@ -528,12 +535,12 @@ ul {
     background-color: #C66E15; }
 
 .button-sg {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   font-family: 'Mukta', sans-serif;
+  font-size: 1rem;
   font-weight: 600;
-  font-size: 1rem; }
+  justify-content: center; }
   .button-sg a:link,
   .button-sg a:visited {
     background-color: #E5892A;
@@ -740,7 +747,7 @@ textarea {
   font-size: 14px;
   background: #fff;
   border-radius: 3px;
-  border: 1px solid  #ccc;
+  border: 1px solid #ccc;
   cursor: pointer; }
 
 .wrapper {
@@ -760,12 +767,12 @@ textarea {
     Header
 ============= */
 header > div {
+  background-color: #fff;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  left: 0;
   padding: 20px 0px;
   position: fixed;
-  background-color: #fff;
-  left: 0;
   top: 0;
   width: 100%;
   z-index: 1000; }
@@ -773,12 +780,12 @@ header > div {
     align-items: center;
     display: flex;
     justify-content: center;
-    width: 25px;
-    padding-left: 15px; }
+    padding-left: 15px;
+    width: 25px; }
     @media (min-width: 768px) {
       header > div #logo-container img {
-        width: initial;
-        padding-left: 25px; } }
+        padding-left: 25px;
+        width: initial; } }
   header > div #name-container {
     align-items: center;
     display: flex;
@@ -824,8 +831,8 @@ footer {
       margin-left: 43px; } }
   @media (min-width: 1025px) {
     footer > div #footer-total-text {
-      display: flex;
       align-items: flex-start;
+      display: flex;
       justify-content: flex-start; } }
   footer > div #footer-total-text #footer-text-1 h6 {
     color: #D66969; }
@@ -836,8 +843,8 @@ footer {
       margin-right: 138px; } }
   @media (min-width: 1025px) {
     footer > div #footer-total-text #footer-text-1 > div {
-      display: flex;
       align-items: center;
+      display: flex;
       justify-content: flex-start; }
       footer > div #footer-total-text #footer-text-1 > div p:nth-child(1) {
         margin-right: 60px; } }
@@ -847,19 +854,19 @@ footer {
     color: #B29C70; }
   @media (min-width: 768px) {
     footer > div #footer-total-text #footer-text {
-      display: flex;
       align-items: auto;
+      display: flex;
       justify-content: flex-start; }
       footer > div #footer-total-text #footer-text > div {
         margin-right: 60px; } }
   @media (min-width: 1025px) {
     footer > div #footer-total-text #footer-text {
-      margin-top: 50px;
-      margin-right: 0px; } }
+      margin-right: 0px;
+      margin-top: 50px; } }
   footer > div #social-media {
+    align-items: center;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     margin-right: 15px; }
     footer > div #social-media li {
       margin: 0px 10px 0px 0px; }
@@ -878,9 +885,9 @@ footer {
         footer > div #social-media li a:visited:active {
           color: #D66969; }
   footer > div #payment {
+    align-items: center;
     display: flex;
-    justify-content: flex-start;
-    align-items: center; }
+    justify-content: flex-start; }
     footer > div #payment li {
       font-size: 1.25rem;
       margin: 0px 5px 0px 0px; }
@@ -892,16 +899,13 @@ footer {
     Index
 ============= */
 #home > div #home-carousel > div .index-slider div {
-  height: 300px; }
+  height: 400px; }
   @media (min-width: 768px) {
     #home > div #home-carousel > div .index-slider div {
-      height: 480px; } }
+      height: 550px; } }
   @media (min-width: 1025px) {
     #home > div #home-carousel > div .index-slider div {
-      height: 580px; } }
-  @media (min-width: 1440px) {
-    #home > div #home-carousel > div .index-slider div {
-      height: 660px; } }
+      height: 670px; } }
   #home > div #home-carousel > div .index-slider div img {
     object-fit: cover;
     object-position: center;
@@ -1027,9 +1031,9 @@ footer {
   gap: 20px;
   grid-template-rows: repeat(5, 330px); }
   #gallery > div #gallery-content-mobile > div ul li img {
+    height: 100%;
     object-fit: cover;
     object-position: center;
-    height: 100%;
     width: 100%; }
   #gallery > div #gallery-content-mobile > div ul li:nth-child(1) img {
     object-position: 0px -20px; }
@@ -1039,22 +1043,22 @@ footer {
     object-position: 0px -200px; }
 
 #gallery > div #gallery-content-tablet {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center; }
   #gallery > div #gallery-content-tablet > div ul {
     display: grid;
     grid-template-rows: repeat(1, 330px);
     margin-bottom: 20px; }
     #gallery > div #gallery-content-tablet > div ul li img {
+      height: 100%;
       object-fit: cover;
       object-position: center;
-      height: 100%;
       width: 100%; }
   #gallery > div #gallery-content-tablet > div ul:nth-child(1) {
     gap: 20px;
-    grid-template-columns: 460px 268px;
-    grid-template-areas: "g1 g2"; }
+    grid-template-areas: "g1 g2";
+    grid-template-columns: 460px 268px; }
     #gallery > div #gallery-content-tablet > div ul:nth-child(1) li:nth-child(1) {
       grid-area: g1; }
       #gallery > div #gallery-content-tablet > div ul:nth-child(1) li:nth-child(1) img {
@@ -1063,8 +1067,8 @@ footer {
       grid-area: g2; }
   #gallery > div #gallery-content-tablet > div ul:nth-child(2) {
     gap: 20px;
-    grid-template-columns: repeat(2, 364px);
-    grid-template-areas: "g3 g4"; }
+    grid-template-areas: "g3 g4";
+    grid-template-columns: repeat(2, 364px); }
     #gallery > div #gallery-content-tablet > div ul:nth-child(2) li:nth-child(1) {
       grid-area: g3; }
       #gallery > div #gallery-content-tablet > div ul:nth-child(2) li:nth-child(1) img {
@@ -1075,30 +1079,30 @@ footer {
         object-position: 0px -80px; }
   #gallery > div #gallery-content-tablet > div ul:nth-child(3) {
     gap: 20px;
-    grid-template-columns: 268px 460px;
-    grid-template-areas: "g5 g6"; }
+    grid-template-areas: "g5 g6";
+    grid-template-columns: 268px 460px; }
     #gallery > div #gallery-content-tablet > div ul:nth-child(3) li:nth-child(1) {
       grid-area: g5; }
     #gallery > div #gallery-content-tablet > div ul:nth-child(3) li:nth-child(2) {
       grid-area: g6; }
 
 #gallery > div #gallery-content-laptop {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center; }
   #gallery > div #gallery-content-laptop > div ul {
     display: grid;
     margin-bottom: 20px; }
     #gallery > div #gallery-content-laptop > div ul li img {
+      height: 100%;
       object-fit: cover;
       object-position: center;
-      height: 100%;
       width: 100%; }
   #gallery > div #gallery-content-laptop > div ul:nth-child(1) {
     gap: 20px;
-    grid-template-rows: repeat(1, 330px);
+    grid-template-areas: "g1 g2 g3";
     grid-template-columns: 262px 300px 422px;
-    grid-template-areas: "g1 g2 g3"; }
+    grid-template-rows: repeat(1, 330px); }
     #gallery > div #gallery-content-laptop > div ul:nth-child(1) li:nth-child(1) {
       grid-area: g1; }
       #gallery > div #gallery-content-laptop > div ul:nth-child(1) li:nth-child(1) img {
@@ -1109,9 +1113,9 @@ footer {
       grid-area: g3; }
   #gallery > div #gallery-content-laptop > div ul:nth-child(2) {
     gap: 20px;
+    grid-template-areas: "g4 g5" "g4 g6";
     grid-template-columns: 742px 262px;
-    grid-template-rows: 470px 210px;
-    grid-template-areas: "g4 g5" "g4 g6"; }
+    grid-template-rows: 470px 210px; }
     #gallery > div #gallery-content-laptop > div ul:nth-child(2) li:nth-child(1) {
       grid-area: g4; }
       #gallery > div #gallery-content-laptop > div ul:nth-child(2) li:nth-child(1) img {
@@ -1124,9 +1128,9 @@ footer {
       grid-area: g6; }
   #gallery > div #gallery-content-laptop > div ul:nth-child(3) {
     gap: 20px;
-    grid-template-rows: repeat(1, 330px);
+    grid-template-areas: "g7 g8";
     grid-template-columns: 582px 422px;
-    grid-template-areas: "g7 g8"; }
+    grid-template-rows: repeat(1, 330px); }
     #gallery > div #gallery-content-laptop > div ul:nth-child(3) li:nth-child(1) {
       grid-area: g7; }
       #gallery > div #gallery-content-laptop > div ul:nth-child(3) li:nth-child(1) img {
@@ -1156,7 +1160,7 @@ footer {
     #orders-carousel > div .my-slider div {
       height: 564px; } }
   #orders-carousel > div .my-slider div img {
+    height: 100%;
     object-fit: cover;
     object-position: center;
-    height: 100%;
     width: 100%; }

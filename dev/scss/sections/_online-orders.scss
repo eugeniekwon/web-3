@@ -5,35 +5,36 @@
 #orders-carousel {
     >div {
 
-        @include lg{
+        @include lg {
             margin: 0px 42px;
         }
 
-        @include xl{
+        @include xl {
             margin: 0px;
         }
-        
-        
+
+
         .my-slider {
 
             div {
 
                 height: 300px;
 
-                @include md{
+                @include md {
                     height: 480px;
                 }
-                @include lg{
+
+                @include lg {
                     height: 564px;
                 }
-                
+
 
                 img {
+                    height: 100%;
                     object-fit: cover;
                     object-position: center;
-                    height: 100%;
                     width: 100%;
- 
+
                 }
             }
 

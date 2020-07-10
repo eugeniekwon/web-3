@@ -3,12 +3,12 @@ console.log("hello fancybox");
 
 $('[data-fancybox="gallery-3"]').fancybox({
     buttons: [
-        // "zoom",
+        "zoom",
         // "share",
         // "slideShow",
-        // "fullScreen",
+        "fullScreen",
         // "download",
         // "thumbs",
-        // "close"
+        "close"
       ]
 });

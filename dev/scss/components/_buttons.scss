@@ -1,17 +1,16 @@
 /* =============
     Buttons
 ============= */
-
-.button{
-    display: flex;
+.button {
     align-items: center;
-    justify-content: flex-start;
+    display: flex;
     font-family: 'Mukta', sans-serif;
-    font-weight: 600;
     font-size: rem-calc(16);
+    font-weight: 600;
+    justify-content: flex-start;
 
     a:link,
-    a:visited{
+    a:visited {
         background-color: $orange;
         border-radius: 30px;
         color: $white;
@@ -20,22 +19,21 @@
     }
 
     a:hover,
-    a:active{
+    a:active {
         background-color: $dark-orange;
     }
-
 }
 
-.button-sg{
-    display: flex;
+.button-sg {
     align-items: center;
-    justify-content: center;
+    display: flex;
     font-family: 'Mukta', sans-serif;
-    font-weight: 600;
     font-size: rem-calc(16);
+    font-weight: 600;
+    justify-content: center;
 
     a:link,
-    a:visited{
+    a:visited {
         background-color: $orange;
         border-radius: 30px;
         color: $white;
@@ -44,8 +42,7 @@
     }
 
     a:hover,
-    a:active{
+    a:active {
         background-color: $dark-orange;
     }
-
 }

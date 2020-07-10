@@ -1,122 +1,125 @@
 /* =============
     Base
 ============= */
-
-
-a:link,a:visited{
+a:link,
+a:visited {
     text-decoration: none;
     transition: 0.25s;
 }
 
-.main-text-margins{
-    >div{
-        @include md{
+.main-text-margins {
+    >div {
+        @include md {
             margin-right: 380px;
         }
-        
-        @include lg{
+
+        @include lg {
             margin-left: 100px;
             margin-right: 370px;
         }
-        
-        @include xl{
+
+        @include xl {
             margin-left: 0px;
         }
     }
 }
 
-.grid-container{
+.grid-container {
     display: grid;
-    grid-template-columns: 15px auto 15px;
     grid-template-areas: ". container .";
+    grid-template-columns: 15px auto 15px;
 
-    @include md{
+    @include md {
         grid-template-columns: 25px auto 25px;
     }
 
-    @include xl{
+    @include xl {
         grid-template-columns: auto 1025px auto;
     }
 
-    >div{
+    >div {
         grid-area: container;
     }
 }
 
-.xl-photo-grid{
-    
-    @include xl{
+.xl-photo-grid {
+    @include xl {
         display: grid;
-        grid-template-columns: auto 1440px auto;
         grid-template-areas: ". photo-container .";
+        grid-template-columns: auto 1440px auto;
     }
 
-    >div{
+    >div {
         grid-area: photo-container;
     }
 }
 
-h1, h2, h3, h4, h5, h6, p{
-    padding: 0px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0px;
+    padding: 0px;
 }
 
-.header-spacing{
+.header-spacing {
     margin-top: 70px;
 
-    @include md{
+    @include md {
         margin-top: 70px;
     }
-    @include lg{
+
+    @include lg {
         margin-top: 80px;
     }
 }
 
-
-.big-spacing{
+.big-spacing {
     margin-bottom: 110px;
 
-    @include md{
+    @include md {
         margin-bottom: 145px;
     }
 
-    @include lg{
+    @include lg {
         margin-bottom: 160px;
     }
 }
 
-.medium-spacing{
+.medium-spacing {
     margin-bottom: 40px;
 
-    @include md{
+    @include md {
         margin-bottom: 60px;
     }
 
-    @include lg{
+    @include lg {
         margin-bottom: 75px;
     }
 }
 
-.small-spacing{
+.small-spacing {
     margin-bottom: 25px;
 
-    @include md{
+    @include md {
         margin-bottom: 35px;
     }
 
-    @include lg{
+    @include lg {
         margin-bottom: 45px;
     }
 }
 
-.xs-spacing{
+.xs-spacing {
     margin-bottom: 10px;
 
-    @include md{
-    margin-bottom: 20px;
+    @include md {
+        margin-bottom: 20px;
     }
 }
-
 
 .show-for-mobile {
     display: flex !important;
@@ -146,48 +149,42 @@ h1, h2, h3, h4, h5, h6, p{
     }
 }
 
-.show-for-md{
+.show-for-md {
     display: none;
-    
-    @include md{
+
+    @include md {
         display: block;
     }
 }
 
-.show-for-lg{
+.show-for-lg {
     display: none;
-    
-    @include lg{
+
+    @include lg {
         display: block;
     }
 }
 
-
-
-.line{
-
-    border-top: 3px solid $violet;
-    width: 100px;
-    // display: flex;
+.line {
     // align-items: flex-end;
+    // display: flex;
     // justify-content: flex-end;
-    margin-top: 110px;
+    border-top: 3px solid $violet;
     margin-bottom: 40px;
+    margin-top: 110px;
+    width: 100px;
 
-    @include md{
+    @include md {
         border-top: 5px solid $violet;
-        width: 200px;
-        margin-top: 145px;
         margin-bottom: 60px;
-
+        margin-top: 145px;
+        width: 200px;
     }
 
-    @include lg{
+    @include lg {
         border-top: 5px solid $violet;
-        width: 340px;
-        margin-top: 160px;
         margin-bottom: 50px;
+        margin-top: 160px;
+        width: 340px;
     }
-        
-
 }

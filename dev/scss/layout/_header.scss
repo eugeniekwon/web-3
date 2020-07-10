@@ -1,15 +1,14 @@
 /* =============
     Header
 ============= */
-
 header {
     >div {
+        background-color: $white;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        left: 0;
         padding: 20px 0px;
         position: fixed;
-        background-color: $white;
-        left: 0;
         top: 0;
         width: 100%;
         z-index: 1000;
@@ -19,42 +18,38 @@ header {
                 align-items: center;
                 display: flex;
                 justify-content: center;
-                width: 25px;
                 padding-left: 15px;
+                width: 25px;
 
                 @include md {
-                    width: initial;
                     padding-left: 25px;
+                    width: initial;
                 }
-
-                
             }
         }
 
         #name-container {
+            align-items: center;
+            display: flex;
+            justify-content: center;
 
-                align-items: center;
-                display: flex;
-                justify-content: center;
+            h6 {
+                font-family: 'Mukta', sans-serif;
+                font-size: rem-calc(16);
+                font-weight: 600;
+                text-align: center;
+            }
 
-                h6 {
-                    font-family: 'Mukta', sans-serif;
-                    font-size: rem-calc(16);
-                    font-weight: 600;
-                    text-align: center;
-                }
+            a:link,
+            a:visited {
+                color: $light-gray;
+                transition: 0.25s;
+            }
 
-                a:link,
-                a:visited {
-                    color: $light-gray;
-                    transition: 0.25s;
-                }
-
-                a:hover,
-                a:active {
-                    color: $dark-gray;
-                }
-
+            a:hover,
+            a:active {
+                color: $dark-gray;
+            }
         }
 
         #burger-container {
@@ -65,8 +60,8 @@ header {
             justify-content: flex-end;
             padding-right: 15px;
 
-            @include md{
-                padding-right: 25px; 
+            @include md {
+                padding-right: 25px;
             }
         }
     }
