@@ -907,69 +907,63 @@ footer {
     #home > div #home-carousel > div .index-slider div {
       height: 670px; } }
   #home > div #home-carousel > div .index-slider div img {
+    height: 100%;
     object-fit: cover;
     object-position: center;
-    height: 100%;
     width: 100%; }
 
-@media (min-width: 768px) {
-  #home > div #home-gallery-1 > div {
-    display: grid;
-    grid-template-columns: 55% auto;
-    grid-template-areas: "h1 h2";
-    column-gap: 20px; } }
-
-@media (min-width: 1025px) {
-  #home > div #home-gallery-1 > div {
-    grid-template-columns: 60% auto;
-    column-gap: 20px; } }
-
-#home > div #home-gallery-1 > div #h1 {
-  background-image: url("../img/index/h1.jpg");
-  background-position: center;
-  background-repeat: none;
-  background-size: cover;
-  height: 65vh;
-  grid-area: h1; }
+#home > div #home-gallery-1 > div ul {
+  display: grid;
+  gap: 40px;
+  grid-template-rows: repeat(2, 550px); }
   @media (min-width: 768px) {
-    #home > div #home-gallery-1 > div #h1 {
-      height: 47vh; } }
+    #home > div #home-gallery-1 > div ul {
+      column-gap: 20px;
+      display: grid;
+      grid-template-areas: "h1 h2";
+      grid-template-columns: 55% auto;
+      grid-template-rows: repeat(1, 550px); } }
   @media (min-width: 1025px) {
-    #home > div #home-gallery-1 > div #h1 {
-      height: 80vh;
-      background-position: center; } }
+    #home > div #home-gallery-1 > div ul {
+      column-gap: 20px;
+      grid-template-columns: 60% auto;
+      grid-template-rows: repeat(1, 650px); } }
   @media (min-width: 1440px) {
-    #home > div #home-gallery-1 > div #h1 {
-      height: 120vh;
-      background-size: 110%;
-      background-position: 0px -280px; } }
-#home > div #home-gallery-1 > div #h2 {
-  background-image: url("../img/index/h2.jpg");
-  background-position: center;
-  background-repeat: none;
-  background-size: cover;
-  height: 65vh;
-  grid-area: h2; }
+    #home > div #home-gallery-1 > div ul {
+      grid-template-rows: repeat(1, 850px); } }
+  #home > div #home-gallery-1 > div ul li img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%; }
   @media (min-width: 768px) {
-    #home > div #home-gallery-1 > div #h2 {
-      height: 47vh;
-      background-position: 0px -70px; } }
+    #home > div #home-gallery-1 > div ul li:nth-child(1) img {
+      grid-area: h1; } }
+  @media (min-width: 768px) {
+    #home > div #home-gallery-1 > div ul li:nth-child(2) img {
+      grid-area: h2; } }
+#home > div #line-h-special {
+  margin-top: 40px; }
+  @media (min-width: 768px) {
+    #home > div #line-h-special {
+      margin-top: 60px; } }
   @media (min-width: 1025px) {
-    #home > div #home-gallery-1 > div #h2 {
-      height: 80vh;
-      background-position: center; } }
-  @media (min-width: 1440px) {
-    #home > div #home-gallery-1 > div #h2 {
-      height: 120vh; } }
+    #home > div #line-h-special {
+      margin-top: 50px; } }
 @media (min-width: 768px) {
-  #home > div #home-hours-text > div {
-    margin: 0px 50px; } }
+  #home > div #home-hours-text {
+    align-items: center;
+    display: flex;
+    justify-content: center; } }
 
 #home > div #home-hours-text > div ul {
+  column-gap: 25px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "day hours";
-  column-gap: 25px; }
+  grid-template-columns: repeat(2, 1fr); }
+  @media (min-width: 768px) {
+    #home > div #home-hours-text > div ul {
+      column-gap: 85px; } }
   #home > div #home-hours-text > div ul li:nth-child(1) {
     grid-area: day; }
   #home > div #home-hours-text > div ul li:nth-child(2) {
@@ -977,52 +971,38 @@ footer {
     #home > div #home-hours-text > div ul li:nth-child(2) p:nth-child(2) {
       color: #D66969; }
 
-@media (min-width: 768px) {
-  #home > div #home-gallery-2 > div {
-    display: grid;
-    grid-template-columns: auto 55%;
-    grid-template-areas: "h3 h4";
-    column-gap: 20px; } }
-
-@media (min-width: 1025px) {
-  #home > div #home-gallery-2 > div {
-    grid-template-columns: 40% auto;
-    column-gap: 20px; } }
-
-#home > div #home-gallery-2 > div #h3 {
-  background-image: url("../img/index/h3.jpg");
-  background-position: center;
-  background-repeat: none;
-  background-size: 240%;
-  height: 65vh;
-  grid-area: h3; }
+#home > div #home-gallery-2 > div ul {
+  display: grid;
+  gap: 40px;
+  grid-template-rows: repeat(2, 550px); }
   @media (min-width: 768px) {
-    #home > div #home-gallery-2 > div #h3 {
-      height: 47vh; } }
+    #home > div #home-gallery-2 > div ul {
+      column-gap: 20px;
+      display: grid;
+      grid-template-areas: "h3 h4";
+      grid-template-columns: auto 55%;
+      grid-template-rows: repeat(1, 550px); } }
   @media (min-width: 1025px) {
-    #home > div #home-gallery-2 > div #h3 {
-      height: 80vh;
-      background-size: cover; } }
+    #home > div #home-gallery-2 > div ul {
+      column-gap: 20px;
+      grid-template-columns: 40% auto; } }
   @media (min-width: 1440px) {
-    #home > div #home-gallery-2 > div #h3 {
-      height: 120vh;
-      background-size: cover; } }
-#home > div #home-gallery-2 > div #h4 {
-  background-image: url("../img/index/h4.jpg");
-  background-position: center;
-  background-repeat: none;
-  background-size: cover;
-  height: 65vh;
-  grid-area: h4; }
+    #home > div #home-gallery-2 > div ul {
+      grid-template-rows: repeat(1, 850px); } }
+  #home > div #home-gallery-2 > div ul li img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%; }
+  #home > div #home-gallery-2 > div ul li:nth-child(1) img {
+    object-position: -220px 0px; }
+    @media (min-width: 768px) {
+      #home > div #home-gallery-2 > div ul li:nth-child(1) img {
+        grid-area: h3;
+        object-position: center; } }
   @media (min-width: 768px) {
-    #home > div #home-gallery-2 > div #h4 {
-      height: 47vh; } }
-  @media (min-width: 1025px) {
-    #home > div #home-gallery-2 > div #h4 {
-      height: 80vh; } }
-  @media (min-width: 1440px) {
-    #home > div #home-gallery-2 > div #h4 {
-      height: 120vh; } }
+    #home > div #home-gallery-2 > div ul li:nth-child(2) img {
+      grid-area: h4; } }
 /* =============
     Gallery
 ============= */

@@ -1,213 +1,186 @@
 /* =============
     Index
 ============= */
-
-#home{
-    >div{
-
+#home {
+    >div {
         #home-carousel {
             >div {
-    
                 .index-slider {
-        
                     div {
-        
                         height: 400px;
-        
-                        @include md{
+
+                        @include md {
                             height: 550px;
                         }
-                        @include lg{
+
+                        @include lg {
                             height: 670px;
                         }
-                        
-        
+
                         img {
+                            height: 100%;
                             object-fit: cover;
                             object-position: center;
-                            height: 100%;
                             width: 100%;
-         
                         }
                     }
-        
                 }
             }
         }
 
-
-        #home-gallery-1{
-
-            >div{
-                @include md{
+        #home-gallery-1 {
+            >div {
+                ul {
                     display: grid;
-                    grid-template-columns: 55% auto;
-                    grid-template-areas: "h1 h2";
-                    column-gap: 20px;
-                }
-    
-                @include lg{
-                    grid-template-columns: 60% auto;
-                    column-gap: 20px;
-                }
-    
-                #h1{
-                    background-image: url("../img/index/h1.jpg");
-                    background-position: center;
-                    background-repeat: none;
-                    background-size: cover;
-                    height: 65vh;
-    
-                    grid-area: h1;
-    
-                    @include md{
-                        height: 47vh;
+                    gap: 40px;
+                    grid-template-rows: repeat(2, 550px);
+
+                    @include md {
+                        column-gap: 20px;
+                        display: grid;
+                        grid-template-areas: "h1 h2";
+                        grid-template-columns: 55% auto;
+                        grid-template-rows: repeat(1, 550px);
                     }
-    
-                    @include lg{
-                        height: 80vh;
-                        background-position: center;
+
+                    @include lg {
+                        column-gap: 20px;
+                        grid-template-columns: 60% auto;
+                        grid-template-rows: repeat(1, 650px);
                     }
-    
-                    @include xl{
-                        height: 120vh;
-                        background-size: 110%;
-                        background-position: 0px -280px;
+
+                    @include xl {
+                        grid-template-rows: repeat(1, 850px);
                     }
-                }
-    
-                #h2{
-                    background-image: url("../img/index/h2.jpg");
-                    background-position: center;
-                    background-repeat: none;
-                    background-size: cover;
-                    height: 65vh;
-                    
-                    grid-area: h2;
-    
-                    @include md{
-                        height: 47vh;
-                        background-position: 0px -70px;
+
+                    li {
+                        img {
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                            width: 100%;
+                        }
                     }
-    
-                    @include lg{
-                        height: 80vh;
-                        background-position: center;
+
+                    li:nth-child(1) {
+                        img {
+                            @include md {
+                                grid-area: h1;
+                            }
+                        }
                     }
-    
-                    @include xl{
-                        height: 120vh;
+
+                    li:nth-child(2) {
+                        img {
+                            @include md {
+                                grid-area: h2;
+                            }
+                        }
                     }
                 }
+
+
             }
-
-            
-
-            
         }
 
-        #home-hours-text{
-            >div{
-                @include md{
-                    margin: 0px 50px;
-                }
+        #line-h-special {
+            margin-top: 40px;
 
-                ul{
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-template-areas: "day hours";
+            @include md {
+                margin-top: 60px;
+            }
+
+            @include lg {
+                margin-top: 50px;
+            }
+        }
+
+        #home-hours-text {
+            @include md {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            >div {
+                ul {
                     column-gap: 25px;
+                    display: grid;
+                    grid-template-areas: "day hours";
+                    grid-template-columns: repeat(2, 1fr);
 
-                    li:nth-child(1){
+                    @include md {
+                        column-gap: 85px;
+                    }
+
+                    li:nth-child(1) {
                         grid-area: day;
                     }
-    
-                    li:nth-child(2){
+
+                    li:nth-child(2) {
                         grid-area: hours;
 
-                        p:nth-child(2){
+                        p:nth-child(2) {
                             color: $pink;
                         }
                     }
-
-                    
                 }
             }
-            
         }
 
-        
-        #home-gallery-2{
-
-            >div{
-                @include md{
+        #home-gallery-2 {
+            >div {
+                ul {
                     display: grid;
-                    grid-template-columns: auto 55%;
-                    grid-template-areas: "h3 h4";
-                    column-gap: 20px;
-                }
-    
-                @include lg{
-                    grid-template-columns: 40% auto;
-                    column-gap: 20px;
-                }
-    
-                #h3{
-                    background-image: url("../img/index/h3.jpg");
-                    background-position: center;
-                    background-repeat: none;
-                    background-size: 240%;
-                    height: 65vh;
-    
-                    grid-area: h3;
-    
-                    @include md{
-                        height: 47vh;
+                    gap: 40px;
+                    grid-template-rows: repeat(2, 550px);
+
+                    @include md {
+                        column-gap: 20px;
+                        display: grid;
+                        grid-template-areas: "h3 h4";
+                        grid-template-columns: auto 55%;
+                        grid-template-rows: repeat(1, 550px);
                     }
-    
-                    @include lg{
-                        height: 80vh;
-                        background-size: cover;
+
+                    @include lg {
+                        column-gap: 20px;
+                        grid-template-columns: 40% auto;
                     }
-    
-                    @include xl{
-                        height: 120vh;
-                        background-size: cover;
-    
+
+                    @include xl {
+                        grid-template-rows: repeat(1, 850px);
                     }
-                }
-    
-                #h4{
-                    background-image: url("../img/index/h4.jpg");
-                    background-position: center;
-                    background-repeat: none;
-                    background-size: cover;
-                    height: 65vh;
-                    
-                    grid-area: h4;
-    
-                    @include md{
-                        height: 47vh;
+
+                    li {
+                        img {
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                            width: 100%;
+                        }
                     }
-    
-                    @include lg{
-                        height: 80vh;
+
+                    li:nth-child(1) {
+                        img {
+                            object-position: -220px 0px;
+
+                            @include md {
+                                grid-area: h3;
+                                object-position: center;
+                            }
+                        }
                     }
-    
-                    @include xl{
-                        height: 120vh;
+
+                    li:nth-child(2) {
+                        img {
+                            @include md {
+                                grid-area: h4;
+                            }
+                        }
                     }
                 }
-                
             }
-
-            
-
-
         }
-
     }
-
-
-
 }
