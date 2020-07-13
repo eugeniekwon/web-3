@@ -19,6 +19,14 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/follow-us.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/follow-us.html",
+		"oF": 0
+		},
 	"/deploy/gallery.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -304,6 +312,14 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/dev/content/follow-us-1.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/follow-us-1.html",
+		"oF": 1
+		},
 	"/dev/content/gallery-1.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -327,6 +343,14 @@
 		"oA": 1,
 		"oAP": "/dev/content/online-orders-1.html",
 		"oF": 0
+		},
+	"/dev/follow-us.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/follow-us.html",
+		"oF": 2
 		},
 	"/dev/gallery.kit": {
 		"cB": 0,
@@ -491,6 +515,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/components/_forms.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/components/_juicer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/components/_juicer.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

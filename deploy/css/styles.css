@@ -764,6 +764,15 @@ textarea {
   background: #f5f5f5; }
 
 /* =============
+    Juicer.io
+============= */
+.referral {
+  display: none !important; }
+
+#follow-instagram {
+  background-color: #FBEAC9; }
+
+/* =============
     Header
 ============= */
 header > div {
