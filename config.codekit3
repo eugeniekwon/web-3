@@ -212,6 +212,61 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/online-orders/photo-1.jpg": {
+		"ft": 16384,
+		"iS": 2821774,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/online-orders/photo-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/online-orders/photo-2.jpg": {
+		"ft": 16384,
+		"iS": 2362452,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/online-orders/photo-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/online-orders/photo-3.jpg": {
+		"ft": 16384,
+		"iS": 1598650,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/online-orders/photo-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/online-orders/photo-4.jpg": {
+		"ft": 16384,
+		"iS": 1831767,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/online-orders/photo-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/online-orders/photo-5.jpg": {
+		"ft": 16384,
+		"iS": 1802519,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/online-orders/photo-5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
