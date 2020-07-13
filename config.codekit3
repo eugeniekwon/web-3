@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "32001",
 "files": {
+	"/deploy/contact.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/contact.html",
+		"oF": 0
+		},
 	"/deploy/css/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -34,6 +42,17 @@
 		"oA": 0,
 		"oAP": "/deploy/gallery.html",
 		"oF": 0
+		},
+	"/deploy/img/contact/contact.jpg": {
+		"ft": 16384,
+		"iS": 2420241,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/contact/contact.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"/deploy/img/gallery/g1.jpg": {
 		"ft": 16384,
@@ -311,6 +330,22 @@
 		"oAP": "/deploy/styles-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/dev/contact.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/contact.html",
+		"oF": 2
+		},
+	"/dev/content/contact-1.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/contact-1.html",
+		"oF": 0
 		},
 	"/dev/content/follow-us-1.kit": {
 		"cB": 0,
@@ -606,6 +641,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/layout/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_contact.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_contact.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
