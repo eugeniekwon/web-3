@@ -24,6 +24,21 @@
     }
 }
 
+.button-submit {
+    align-items: center;
+    display: flex;
+    font-family: 'Mukta', sans-serif;
+    font-size: rem-calc(16);
+    font-weight: 600;
+    justify-content: flex-start;
+    background-color: $orange;
+    border-radius: 30px;
+    color: $white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
 .button-sg {
     align-items: center;
     display: flex;

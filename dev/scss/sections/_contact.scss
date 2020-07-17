@@ -2,11 +2,11 @@
     Contact
 ============= */
 
-#contact{
-    >div{
+#contact {
+    >div {
 
-        #contact-hero{
-            img{
+        #contact-hero {
+            img {
                 height: 100%;
                 object-fit: cover;
                 object-position: center;
@@ -14,24 +14,239 @@
             }
         }
 
-        #google-map{
-            
+        #google-map {
+
             #map {
-                height: 300px; 
-                width: 100%;  
+                height: 300px;
+                width: 100%;
                 background-color: $cream;
 
-                @include md{
+                @include md {
                     height: 450px;
                 }
 
-                @include lg{
+                @include lg {
                     height: 550px;
                 }
 
-               }
+            }
         }
-        
-        
+
+        #contact-form {
+            background-color: $cream;
+            padding: 40px 0px;
+
+            @include md {
+                padding: 60px 0px;
+                display: grid;
+                grid-template-columns: auto 70% auto;
+                grid-template-areas: ". form .";
+            }
+
+            @include lg {
+                padding: 75px 0px;
+                grid-template-columns: auto 70% auto;
+            }
+
+            >div {
+                @include md {
+                    grid-area: form;
+                }
+
+                #contact-button-section {
+                    display: grid;
+                    place-items: center;
+                    height: 100px;
+
+                    @include md {
+                        height: 150px;
+                    }
+
+                    @include lg {
+                        height: 200px;
+                    }
+
+                    #button-container {
+                        position: relative;
+                        transition: 0.5s;
+
+                        &:hover {
+                            #contact-options {
+                                opacity: 1;
+                                pointer-events: auto;
+                            }
+                        }
+
+                        #contact-us-btn {
+                            border: none;
+                            transition: 0.25s;
+                        }
+
+                        #contact-options {
+                            
+                            pointer-events: none;
+                            transition: 0.5s;
+                            opacity: 0;
+                            background-color: $white;
+                            position: absolute;
+                            top: 100%;
+                            left: 0%;
+                            width: 100%;
+                            
+
+                            @include md {
+                                top: -25%;
+                                left: 90%;
+                            }
+
+                            a:link,
+                            a:visited {
+                                background-color: $white;
+                                color: $orange;
+                                font-size: rem-calc(16);
+                                width: 94%;
+                                transition: 0.25s;
+                                padding: 10% 3%;
+                                display: inline-block;
+                                font-family: 'Mukta', sans-serif;
+                                font-weight: 400;
+                                
+                                
+                                &:hover,
+                                &:active {
+                                    color: $white;
+                                    background-color: $orange;
+                                    font-family: 'Mukta', sans-serif;
+                                    font-weight: 400;
+
+                                }
+                            }
+
+                            button{
+                                background-color: $white;
+                                color: $orange;
+                                font-size: rem-calc(16);
+                                width: 100%;
+                                transition: 0.25s;
+                                padding: 10% 2%;
+                                display: inline-block;
+                                font-family: 'Mukta', sans-serif;
+                                font-weight: 400;
+                                border: none;
+
+                                i {
+                                    margin-right: 10px;
+                                }
+
+                                &:hover,
+                                &:active {
+                                    color: $white;
+                                    background-color: $orange;
+
+                                }
+                            }
+
+                            
+
+
+
+                        }
+
+
+
+                    }
+
+                }
+
+                #form-container {
+
+                    display: none;
+
+                    form {
+                        display: grid;
+                        gap: 25px;
+
+                        @include md {
+                            grid-template-columns: repeat(2, 1fr);
+                            grid-template-areas:
+                                "name message"
+                                "email message"
+                                ". message"
+                                ". message"
+                                ". submit";
+                        }
+
+
+                        section {
+                            background-color: $cream;
+                            width: 96%;
+                            padding: 0 0.5%;
+                            border: 5px solid $orange;
+                            border-radius: rem-calc(10);
+
+                            input {
+                                background-color: transparent;
+                                border-radius: rem-calc(10);
+                                border: none;
+                                width: 96%;
+                                padding: 3% 2%;
+
+                            }
+                        }
+
+                        textarea {
+                            border: none;
+                            height: 200px;
+                            width: 96%;
+                            padding: 3% 2%;
+                            background-color: transparent;
+                            border-radius: rem-calc(10);
+
+                            @include md {
+                                height: 300px;
+                            }
+
+                            @include lg {
+                                height: 370px;
+                            }
+                        }
+
+                        section:nth-child(1) {
+                            @include md {
+                                grid-area: name;
+                            }
+                        }
+
+                        section:nth-child(2) {
+                            @include md {
+                                grid-area: email;
+                            }
+                        }
+
+                        section:nth-child(3) {
+                            @include md {
+                                grid-area: message;
+                            }
+                        }
+
+                        section:nth-child(4) {
+                            @include md {
+                                grid-area: submit;
+                            }
+
+                            background-color: transparent;
+                            border: none;
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+
+
+
     }
 }

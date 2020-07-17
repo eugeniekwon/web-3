@@ -534,6 +534,20 @@ ul {
   .button a:active {
     background-color: #C66E15; }
 
+.button-submit {
+  align-items: center;
+  display: flex;
+  font-family: 'Mukta', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  justify-content: flex-start;
+  background-color: #E5892A;
+  border-radius: 30px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer; }
+
 .button-sg {
   align-items: center;
   display: flex;
@@ -1173,3 +1187,135 @@ footer {
   @media (min-width: 1025px) {
     #contact > div #google-map #map {
       height: 550px; } }
+#contact > div #contact-form {
+  background-color: #FFF6E6;
+  padding: 40px 0px; }
+  @media (min-width: 768px) {
+    #contact > div #contact-form {
+      padding: 60px 0px;
+      display: grid;
+      grid-template-columns: auto 70% auto;
+      grid-template-areas: ". form ."; } }
+  @media (min-width: 1025px) {
+    #contact > div #contact-form {
+      padding: 75px 0px;
+      grid-template-columns: auto 70% auto; } }
+  @media (min-width: 768px) {
+    #contact > div #contact-form > div {
+      grid-area: form; } }
+  #contact > div #contact-form > div #contact-button-section {
+    display: grid;
+    place-items: center;
+    height: 100px; }
+    @media (min-width: 768px) {
+      #contact > div #contact-form > div #contact-button-section {
+        height: 150px; } }
+    @media (min-width: 1025px) {
+      #contact > div #contact-form > div #contact-button-section {
+        height: 200px; } }
+    #contact > div #contact-form > div #contact-button-section #button-container {
+      position: relative;
+      transition: 0.5s; }
+      #contact > div #contact-form > div #contact-button-section #button-container:hover #contact-options {
+        opacity: 1;
+        pointer-events: auto; }
+      #contact > div #contact-form > div #contact-button-section #button-container #contact-us-btn {
+        border: none;
+        transition: 0.25s; }
+      #contact > div #contact-form > div #contact-button-section #button-container #contact-options {
+        pointer-events: none;
+        transition: 0.5s;
+        opacity: 0;
+        background-color: #fff;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 100%; }
+        @media (min-width: 768px) {
+          #contact > div #contact-form > div #contact-button-section #button-container #contact-options {
+            top: -25%;
+            left: 90%; } }
+        #contact > div #contact-form > div #contact-button-section #button-container #contact-options a:link,
+        #contact > div #contact-form > div #contact-button-section #button-container #contact-options a:visited {
+          background-color: #fff;
+          color: #E5892A;
+          font-size: 1rem;
+          width: 94%;
+          transition: 0.25s;
+          padding: 10% 3%;
+          display: inline-block;
+          font-family: 'Mukta', sans-serif;
+          font-weight: 400; }
+          #contact > div #contact-form > div #contact-button-section #button-container #contact-options a:link:hover, #contact > div #contact-form > div #contact-button-section #button-container #contact-options a:link:active,
+          #contact > div #contact-form > div #contact-button-section #button-container #contact-options a:visited:hover,
+          #contact > div #contact-form > div #contact-button-section #button-container #contact-options a:visited:active {
+            color: #fff;
+            background-color: #E5892A;
+            font-family: 'Mukta', sans-serif;
+            font-weight: 400; }
+        #contact > div #contact-form > div #contact-button-section #button-container #contact-options button {
+          background-color: #fff;
+          color: #E5892A;
+          font-size: 1rem;
+          width: 100%;
+          transition: 0.25s;
+          padding: 10% 2%;
+          display: inline-block;
+          font-family: 'Mukta', sans-serif;
+          font-weight: 400;
+          border: none; }
+          #contact > div #contact-form > div #contact-button-section #button-container #contact-options button i {
+            margin-right: 10px; }
+          #contact > div #contact-form > div #contact-button-section #button-container #contact-options button:hover, #contact > div #contact-form > div #contact-button-section #button-container #contact-options button:active {
+            color: #fff;
+            background-color: #E5892A; }
+  #contact > div #contact-form > div #form-container {
+    display: none; }
+    #contact > div #contact-form > div #form-container form {
+      display: grid;
+      gap: 25px; }
+      @media (min-width: 768px) {
+        #contact > div #contact-form > div #form-container form {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-areas: "name message" "email message" ". message" ". message" ". submit"; } }
+      #contact > div #contact-form > div #form-container form section {
+        background-color: #FFF6E6;
+        width: 96%;
+        padding: 0 0.5%;
+        border: 5px solid #E5892A;
+        border-radius: 0.625rem; }
+        #contact > div #contact-form > div #form-container form section input {
+          background-color: transparent;
+          border-radius: 0.625rem;
+          border: none;
+          width: 96%;
+          padding: 3% 2%; }
+      #contact > div #contact-form > div #form-container form textarea {
+        border: none;
+        height: 200px;
+        width: 96%;
+        padding: 3% 2%;
+        background-color: transparent;
+        border-radius: 0.625rem; }
+        @media (min-width: 768px) {
+          #contact > div #contact-form > div #form-container form textarea {
+            height: 300px; } }
+        @media (min-width: 1025px) {
+          #contact > div #contact-form > div #form-container form textarea {
+            height: 370px; } }
+      @media (min-width: 768px) {
+        #contact > div #contact-form > div #form-container form section:nth-child(1) {
+          grid-area: name; } }
+      @media (min-width: 768px) {
+        #contact > div #contact-form > div #form-container form section:nth-child(2) {
+          grid-area: email; } }
+      @media (min-width: 768px) {
+        #contact > div #contact-form > div #form-container form section:nth-child(3) {
+          grid-area: message; } }
+      #contact > div #contact-form > div #form-container form section:nth-child(4) {
+        background-color: transparent;
+        border: none;
+        text-align: right; }
+        @media (min-width: 768px) {
+          #contact > div #contact-form > div #form-container form section:nth-child(4) {
+            grid-area: submit; } }
