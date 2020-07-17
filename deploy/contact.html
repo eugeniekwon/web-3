@@ -123,28 +123,170 @@
             </footer>
 
     <script>
-        // Initialize and add the map
+
         function initMap() {
-            // The location of Uluru
-            var uluru = {
-                lat: -25.344,
-                lng: 131.036
+
+            // Styles a map in night mode.
+            var myLatLng = {
+                lat: 39.917060,
+                lng: -75.141784
             };
-            // The map, centered at Uluru
-            var map = new google.maps.Map(
-                document.getElementById('map'), {
-                    zoom: 4,
-                    center: uluru
-                });
-            // The marker, positioned at Uluru
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: 39.917060,
+                    lng: -75.141784
+                },
+
+                zoom: 15,
+
+                styles: [{
+                        //changed to dark cream colour
+                        elementType: 'geometry',
+                        stylers: [{
+                            color: '#FBEAC9'
+                        }]
+                    },
+                    {
+
+                        // changed to dark gray colour
+                        elementType: 'labels.text.stroke',
+                        stylers: [{
+                            color: '#474747'
+                        }]
+                    },
+                    {
+                        // changed to white
+                        elementType: 'labels.text.fill',
+                        stylers: [{
+                            color: '#ffffff'
+                        }]
+                    },
+                    {
+                        featureType: 'administrative.locality',
+                        elementType: 'labels.text.fill',
+                        stylers: [{
+                            color: '#d59563'
+                        }]
+                    },
+                    {
+                        // changed to white 
+                        featureType: 'poi',
+                        elementType: 'labels.text.fill',
+                        stylers: [{
+                            color: '#D66969'
+                        }]
+                    },
+                    {
+                        featureType: 'poi.park',
+                        elementType: 'geometry',
+                        stylers: [{
+                            color: '#ffffff'
+                        }]
+                    },
+                    {
+                        featureType: 'poi.park',
+                        elementType: 'labels.text.fill',
+                        stylers: [{
+                            color: '#6b9a76'
+                        }]
+                    },
+                    {
+                        //changed to dark brown colour
+                        featureType: 'road',
+                        elementType: 'geometry',
+                        stylers: [{
+                            color: '#796B4F'
+                        }]
+                    },
+                    {
+                        //changed to brown colour
+                        featureType: 'road',
+                        elementType: 'geometry.stroke',
+                        stylers: [{
+                            color: '#B29C70'
+                        }]
+                    },
+                    {
+                        featureType: 'road',
+                        elementType: 'labels.text.fill',
+                        stylers: [{
+                            color: '#9ca5b3'
+                        }]
+                    },
+                    {
+                        //changed to dark brown colour
+                        featureType: 'road.highway',
+                        elementType: 'geometry',
+                        stylers: [{
+                            color: '#796B4F'
+                        }]
+                    },
+                    {
+                        //changed to brown colour
+                        featureType: 'road.highway',
+                        elementType: 'geometry.stroke',
+                        stylers: [{
+                            color: '#B29C70'
+                        }]
+                    },
+                    {
+                        featureType: 'road.highway',
+                        elementType: 'labels.text.fill',
+                        stylers: [{
+                            color: '#f3d19c'
+                        }]
+                    },
+                    {
+                        //changed to dark brown colour
+                        featureType: 'transit',
+                        elementType: 'geometry',
+                        stylers: [{
+                            color: '#796B4F'
+                        }]
+                    },
+                    {
+                        featureType: 'transit.station',
+                        elementType: 'labels.text.fill',
+                        stylers: [{
+                            color: '#d59563'
+                        }]
+                    },
+                    {
+                        //changed to violet colour
+                        featureType: 'water',
+                        elementType: 'geometry',
+                        stylers: [{
+                            color: '#8186A5'
+                        }]
+                    },
+                    {
+                        featureType: 'water',
+                        elementType: 'labels.text.fill',
+                        stylers: [{
+                            color: '#515c6d'
+                        }]
+                    },
+                    {
+                        featureType: 'water',
+                        elementType: 'labels.text.stroke',
+                        stylers: [{
+                            color: '#17263c'
+                        }]
+                    }
+                ]
+            });
+
             var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
+                position: myLatLng,
+                map: map,
+                title: 'Hello World!'
             });
         }
     </script>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaajwUyLPOvAlXRne9VUCFcLvbes8nPg8&callback=initMap">
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaajwUyLPOvAlXRne9VUCFcLvbes8nPg8&callback=initMap">
     </script>
 
 

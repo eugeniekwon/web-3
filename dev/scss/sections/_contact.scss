@@ -17,9 +17,18 @@
         #google-map{
             
             #map {
-                height: 400px; 
+                height: 300px; 
                 width: 100%;  
                 background-color: $cream;
+
+                @include md{
+                    height: 450px;
+                }
+
+                @include lg{
+                    height: 550px;
+                }
+
                }
         }
         
