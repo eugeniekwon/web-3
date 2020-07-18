@@ -3,6 +3,7 @@
 ============= */
 
 #contact {
+    
     >div {
 
         #contact-hero {
@@ -80,6 +81,10 @@
                         #contact-us-btn {
                             border: none;
                             transition: 0.25s;
+
+                            i{
+                                margin-left: 10px;
+                            }
                         }
 
                         #contact-options {
@@ -100,7 +105,7 @@
                             }
 
                             a:link,
-                            a:visited {
+                            a:visited{
                                 background-color: $white;
                                 color: $orange;
                                 font-size: rem-calc(16);
@@ -110,17 +115,22 @@
                                 display: inline-block;
                                 font-family: 'Mukta', sans-serif;
                                 font-weight: 400;
-                                
-                                
+                                border: none;
+                                cursor: pointer;
+
+                                i {
+                                    margin-right: 10px;
+                                    
+                                }
+
                                 &:hover,
                                 &:active {
                                     color: $white;
                                     background-color: $orange;
-                                    font-family: 'Mukta', sans-serif;
-                                    font-weight: 400;
 
                                 }
                             }
+
 
                             button{
                                 background-color: $white;
@@ -133,6 +143,7 @@
                                 font-family: 'Mukta', sans-serif;
                                 font-weight: 400;
                                 border: none;
+                                cursor: pointer;
 
                                 i {
                                     margin-right: 10px;

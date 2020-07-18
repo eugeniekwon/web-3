@@ -1222,6 +1222,8 @@ footer {
       #contact > div #contact-form > div #contact-button-section #button-container #contact-us-btn {
         border: none;
         transition: 0.25s; }
+        #contact > div #contact-form > div #contact-button-section #button-container #contact-us-btn i {
+          margin-left: 10px; }
       #contact > div #contact-form > div #contact-button-section #button-container #contact-options {
         pointer-events: none;
         transition: 0.5s;
@@ -1245,14 +1247,17 @@ footer {
           padding: 10% 3%;
           display: inline-block;
           font-family: 'Mukta', sans-serif;
-          font-weight: 400; }
+          font-weight: 400;
+          border: none;
+          cursor: pointer; }
+          #contact > div #contact-form > div #contact-button-section #button-container #contact-options a:link i,
+          #contact > div #contact-form > div #contact-button-section #button-container #contact-options a:visited i {
+            margin-right: 10px; }
           #contact > div #contact-form > div #contact-button-section #button-container #contact-options a:link:hover, #contact > div #contact-form > div #contact-button-section #button-container #contact-options a:link:active,
           #contact > div #contact-form > div #contact-button-section #button-container #contact-options a:visited:hover,
           #contact > div #contact-form > div #contact-button-section #button-container #contact-options a:visited:active {
             color: #fff;
-            background-color: #E5892A;
-            font-family: 'Mukta', sans-serif;
-            font-weight: 400; }
+            background-color: #E5892A; }
         #contact > div #contact-form > div #contact-button-section #button-container #contact-options button {
           background-color: #fff;
           color: #E5892A;
@@ -1263,7 +1268,8 @@ footer {
           display: inline-block;
           font-family: 'Mukta', sans-serif;
           font-weight: 400;
-          border: none; }
+          border: none;
+          cursor: pointer; }
           #contact > div #contact-form > div #contact-button-section #button-container #contact-options button i {
             margin-right: 10px; }
           #contact > div #contact-form > div #contact-button-section #button-container #contact-options button:hover, #contact > div #contact-form > div #contact-button-section #button-container #contact-options button:active {
