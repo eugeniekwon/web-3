@@ -27,12 +27,12 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/deploy/follow-us.html": {
+	"/deploy/follow.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/deploy/follow-us.html",
+		"oAP": "/deploy/follow.html",
 		"oF": 0
 		},
 	"/deploy/gallery.html": {
@@ -347,12 +347,12 @@
 		"oAP": "/dev/content/contact-1.html",
 		"oF": 0
 		},
-	"/dev/content/follow-us-1.kit": {
+	"/dev/content/follow-1.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/dev/content/follow-us-1.html",
+		"oAP": "/dev/content/follow-1.html",
 		"oF": 1
 		},
 	"/dev/content/gallery-1.kit": {
@@ -379,12 +379,12 @@
 		"oAP": "/dev/content/online-orders-1.html",
 		"oF": 0
 		},
-	"/dev/follow-us.kit": {
+	"/dev/follow.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/deploy/follow-us.html",
+		"oAP": "/deploy/follow.html",
 		"oF": 2
 		},
 	"/dev/gallery.kit": {
@@ -417,6 +417,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/global/header.html",
+		"oF": 0
+		},
+	"/dev/global/main-nav.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/global/main-nav.html",
 		"oF": 0
 		},
 	"/dev/global/scripts.kit": {

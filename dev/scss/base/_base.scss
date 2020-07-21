@@ -1,6 +1,16 @@
 /* =============
     Base
 ============= */
+
+
+ul {
+    padding: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
 a:link,
 a:visited {
     text-decoration: none;

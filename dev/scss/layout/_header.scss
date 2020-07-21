@@ -2,17 +2,18 @@
     Header
 ============= */
 header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    z-index: 100;
+
     >div {
-        background-color: $white;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        left: 0;
         padding: 20px 0px;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
-
+        
         #logo-container {
             img {
                 align-items: center;

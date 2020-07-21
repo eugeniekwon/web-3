@@ -318,6 +318,11 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
 a:link,
 a:visited {
   text-decoration: none;
@@ -584,6 +589,97 @@ textarea {
 /* =============
     Navigation
 ============= */
+.hide-nav-buttons {
+  display: none; }
+
+.show-nav-buttons {
+  display: block !important; }
+
+#main-nav {
+  background-color: #FBEAC9;
+  bottom: 0;
+  display: grid;
+  height: 100vh;
+  left: 0;
+  place-items: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 90; }
+  #main-nav ul li button {
+    background-color: transparent;
+    border: none;
+    color: #D66969;
+    display: inline-block;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.25rem;
+    padding: 15px 0px 15px 10px;
+    text-align: left;
+    transition: 0.25s;
+    width: 100%; }
+    @media (min-width: 768px) {
+      #main-nav ul li button {
+        font-size: 1.875rem; } }
+    @media (min-width: 1025px) {
+      #main-nav ul li button {
+        font-size: 2.5rem; } }
+    #main-nav ul li button i {
+      color: #D66969;
+      font-size: 1.125rem; }
+      @media (min-width: 768px) {
+        #main-nav ul li button i {
+          font-size: 1.75rem; } }
+      @media (min-width: 1025px) {
+        #main-nav ul li button i {
+          font-size: 2.375rem; } }
+    #main-nav ul li button:hover {
+      background-color: #fff;
+      color: #A44646; }
+      #main-nav ul li button:hover i {
+        color: #A44646; }
+  #main-nav ul li a:link,
+  #main-nav ul li a:visited {
+    background-color: transparent;
+    border: none;
+    color: #D66969;
+    display: inline-block;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.25rem;
+    padding: 15px 0px 15px 10px;
+    text-align: left;
+    transition: 0.25s;
+    width: 100%; }
+    @media (min-width: 768px) {
+      #main-nav ul li a:link,
+      #main-nav ul li a:visited {
+        font-size: 1.875rem; } }
+    @media (min-width: 1025px) {
+      #main-nav ul li a:link,
+      #main-nav ul li a:visited {
+        font-size: 2.5rem; } }
+    #main-nav ul li a:link i,
+    #main-nav ul li a:visited i {
+      color: #D66969;
+      font-size: 1.125rem; }
+      @media (min-width: 768px) {
+        #main-nav ul li a:link i,
+        #main-nav ul li a:visited i {
+          font-size: 1.75rem; } }
+      @media (min-width: 1025px) {
+        #main-nav ul li a:link i,
+        #main-nav ul li a:visited i {
+          font-size: 2.375rem; } }
+    #main-nav ul li a:link:hover, #main-nav ul li a:link:active,
+    #main-nav ul li a:visited:hover,
+    #main-nav ul li a:visited:active {
+      background-color: #fff;
+      color: #A44646; }
+      #main-nav ul li a:link:hover i, #main-nav ul li a:link:active i,
+      #main-nav ul li a:visited:hover i,
+      #main-nav ul li a:visited:active i {
+        color: #A44646; }
+
 /* =============
     Fancybox
 ============= */
@@ -789,52 +885,53 @@ textarea {
 /* =============
     Header
 ============= */
-header > div {
-  background-color: #fff;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  left: 0;
-  padding: 20px 0px;
+header {
   position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 1000; }
-  header > div #logo-container img {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding-left: 15px;
-    width: 25px; }
-    @media (min-width: 768px) {
-      header > div #logo-container img {
-        padding-left: 25px;
-        width: initial; } }
-  header > div #name-container {
-    align-items: center;
-    display: flex;
-    justify-content: center; }
-    header > div #name-container h6 {
-      font-family: 'Mukta', sans-serif;
-      font-size: 1rem;
-      font-weight: 600;
-      text-align: center; }
-    header > div #name-container a:link,
-    header > div #name-container a:visited {
-      color: #626262;
-      transition: 0.25s; }
-    header > div #name-container a:hover,
-    header > div #name-container a:active {
-      color: #474747; }
-  header > div #burger-container {
-    align-items: center;
-    color: #D66969;
-    display: flex;
-    font-size: 1.25rem;
-    justify-content: flex-end;
-    padding-right: 15px; }
-    @media (min-width: 768px) {
-      header > div #burger-container {
-        padding-right: 25px; } }
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 100; }
+  header > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 0px; }
+    header > div #logo-container img {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      padding-left: 15px;
+      width: 25px; }
+      @media (min-width: 768px) {
+        header > div #logo-container img {
+          padding-left: 25px;
+          width: initial; } }
+    header > div #name-container {
+      align-items: center;
+      display: flex;
+      justify-content: center; }
+      header > div #name-container h6 {
+        font-family: 'Mukta', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center; }
+      header > div #name-container a:link,
+      header > div #name-container a:visited {
+        color: #626262;
+        transition: 0.25s; }
+      header > div #name-container a:hover,
+      header > div #name-container a:active {
+        color: #474747; }
+    header > div #burger-container {
+      align-items: center;
+      color: #D66969;
+      display: flex;
+      font-size: 1.25rem;
+      justify-content: flex-end;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        header > div #burger-container {
+          padding-right: 25px; } }
 /* =============
     Footer
 ============= */
