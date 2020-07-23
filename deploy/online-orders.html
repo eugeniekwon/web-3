@@ -41,12 +41,13 @@
             </section>
     
             <section id="burger-container">
-                <svg xmlns="http://www.w3.org/2000/svg" width="46px" height="29px" viewBox="0 0 46 29">
+    
+                <svg xmlns="http://www.w3.org/2000/svg" width="46px" height="40px" viewBox="0 0 46 29" id="burger">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
-                      <g id="burger" stroke="#000" stroke-width="4">
-                        <path id="bottom-line" d="M4 24.5h38"/>
-                        <path id="middle-line" d="M4 14.5h38"/>
-                        <path id="top-line" d="M4 4.5h38"/>
+                      <g id="lines" stroke="#000" stroke-width="4">
+                        <path id="bottom-line" d="M4 24.5h38" class="lines" />
+                        <path id="middle-line" d="M4 14.5h38" class="lines" />
+                        <path id="top-line" d="M4 4.5h38" class="lines" />
                       </g>
                     </g>
                   </svg>
@@ -56,10 +57,10 @@
     </header>
 
 
-    <nav id="main-nav" class="header-spacing">
+    <nav id="main-nav">
         <ul>
-            <li class=" hide-nav-buttons"><button><i class="fas fa-heart"></i> Welcome</button></li>
-            <li class=" hide-nav-buttons"><button><i class="fas fa-store-alt"></i> Store Hours</button></li>
+            <li class=" hide-nav-buttons"><button id="welcome-btn"><i class="fas fa-heart"></i> Welcome</button></li>
+            <li class=" hide-nav-buttons"><button id="home-hours-btn"><i class="fas fa-store-alt"></i> Store Hours</button></li>
     
             <li class="show-nav-buttons hide-nav-buttons"><a href="index.html#home-intro-text"><i class="fas fa-heart"></i> Welcome</a></li>
             <li class="show-nav-buttons hide-nav-buttons"><a href="index.html#home-hours-text"><i class="fas fa-store-alt"></i> Store Hours</a></li>
@@ -152,8 +153,12 @@
         </footer>
     <!-- jQuery -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            
+            <!-- Greensock Scroll To Plugin -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollToPlugin.min.js"></script>
+            
             <!-- Greensock -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
             <!-- FancyBox -->
             <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
             <!-- TinySlider -->

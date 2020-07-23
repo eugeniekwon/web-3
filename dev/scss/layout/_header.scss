@@ -55,14 +55,29 @@ header {
 
         #burger-container {
             align-items: center;
-            color: $pink;
             display: flex;
-            font-size: rem-calc(20);
             justify-content: flex-end;
             padding-right: 15px;
 
             @include md {
                 padding-right: 25px;
+            }
+
+            #burger{
+                cursor: pointer;
+                transition: 0.25s; 
+
+                #lines{
+                    stroke: $pink !important;
+                    transition: 0.25s;
+                }
+
+                &:hover{
+
+                    #lines{
+                        stroke: $dark-pink !important;
+                    }
+                }
             }
         }
     }
