@@ -1,8 +1,16 @@
 /* =============
     Gallery
 ============= */
+
 #gallery {
+    
     >div {
+
+        #line-g1{
+            display: flex;
+            justify-content: flex-end;
+        }
+
         #gallery-content-mobile {
             >div {
                 ul {

@@ -6,6 +6,11 @@
     
     >div {
 
+        #line-c1{
+            display: flex;
+            justify-content: flex-end;
+        }
+
         #contact-hero {
             img {
                 height: 100%;
@@ -257,7 +262,10 @@
         }
 
 
-
+        #line-c2{
+            display: flex;
+            justify-content: flex-end;
+        }
 
     }
 }

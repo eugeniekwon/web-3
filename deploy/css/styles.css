@@ -617,7 +617,8 @@ textarea {
     padding: 15px 0px 15px 10px;
     text-align: left;
     transition: 0.25s;
-    width: 100%; }
+    width: 100%;
+    cursor: pointer; }
     @media (min-width: 768px) {
       #main-nav ul li button {
         font-size: 1.875rem; } }
@@ -819,7 +820,7 @@ textarea {
   line-height: 2.5em; }
 
 [data-action] {
-  display: block;
+  display: none;
   margin: 10px auto;
   font-size: 17px;
   min-width: 3em;
@@ -1069,6 +1070,10 @@ footer {
   @media (min-width: 768px) {
     #home > div #home-gallery-1 > div ul li:nth-child(2) img {
       grid-area: h2; } }
+#home > div #line-h1 {
+  display: flex;
+  justify-content: flex-end; }
+
 #home > div #line-h-special {
   margin-top: 40px; }
   @media (min-width: 768px) {
@@ -1130,9 +1135,17 @@ footer {
   @media (min-width: 768px) {
     #home > div #home-gallery-2 > div ul li:nth-child(2) img {
       grid-area: h4; } }
+#home > div #line-h3 {
+  display: flex;
+  justify-content: flex-end; }
+
 /* =============
     Gallery
 ============= */
+#gallery > div #line-g1 {
+  display: flex;
+  justify-content: flex-end; }
+
 #gallery > div #gallery-content-mobile > div ul {
   display: grid;
   gap: 20px;
@@ -1250,23 +1263,27 @@ footer {
 /* =============
     Online Orders
 ============= */
+#online-orders #line-o1 {
+  display: flex;
+  justify-content: flex-end; }
+
 @media (min-width: 1025px) {
-  #orders-carousel > div {
+  #online-orders #orders-carousel > div {
     margin: 0px 42px; } }
 
 @media (min-width: 1440px) {
-  #orders-carousel > div {
+  #online-orders #orders-carousel > div {
     margin: 0px; } }
 
-#orders-carousel > div .my-slider div {
+#online-orders #orders-carousel > div .my-slider div {
   height: 300px; }
   @media (min-width: 768px) {
-    #orders-carousel > div .my-slider div {
+    #online-orders #orders-carousel > div .my-slider div {
       height: 480px; } }
   @media (min-width: 1025px) {
-    #orders-carousel > div .my-slider div {
+    #online-orders #orders-carousel > div .my-slider div {
       height: 564px; } }
-  #orders-carousel > div .my-slider div img {
+  #online-orders #orders-carousel > div .my-slider div img {
     height: 100%;
     object-fit: cover;
     object-position: center;
@@ -1275,6 +1292,10 @@ footer {
 /* =============
     Contact
 ============= */
+#contact > div #line-c1 {
+  display: flex;
+  justify-content: flex-end; }
+
 #contact > div #contact-hero img {
   height: 100%;
   object-fit: cover;
@@ -1429,3 +1450,13 @@ footer {
         @media (min-width: 768px) {
           #contact > div #contact-form > div #form-container form section:nth-child(4) {
             grid-area: submit; } }
+#contact > div #line-c2 {
+  display: flex;
+  justify-content: flex-end; }
+
+/* =============
+    Follow
+============= */
+#line-f1 {
+  display: flex;
+  justify-content: flex-end; }

@@ -38,6 +38,7 @@
                 text-align: left;
                 transition: 0.25s;
                 width: 100%;
+                cursor: pointer;
 
                 @include md {
                     font-size: rem-calc(30);

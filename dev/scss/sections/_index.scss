@@ -24,7 +24,9 @@
                             width: 100%;
                         }
                     }
+
                 }
+
             }
         }
 
@@ -81,6 +83,11 @@
 
 
             }
+        }
+
+        #line-h1{
+            display: flex;
+            justify-content: flex-end;;
         }
 
         #line-h-special {
@@ -181,6 +188,11 @@
                     }
                 }
             }
+        }
+
+        #line-h3{
+            display: flex;
+            justify-content: flex-end;;
         }
     }
 }
