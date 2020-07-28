@@ -48,3 +48,15 @@ function hideShowMainNav(){
     }
 
 }
+
+
+var menuBackground = document.querySelector('#main-nav');
+
+window.onclick = function(event){
+    
+    //hiding menu when clicked anywhere outside of the button areas
+    if(event.target == menuBackground){
+        hideShowMainNav();
+    }
+    
+}
