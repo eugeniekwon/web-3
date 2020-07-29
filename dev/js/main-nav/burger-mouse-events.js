@@ -3,11 +3,11 @@ var burgerToArrowTimeline = gsap.timeline({paused:true});
 var burgerArrowSpeed = 0.25;
 
 
-gsap.set("#burger", {rotation:0});
+gsap.set("#burger", {rotation:0,transformOrigin:("center")});
 
 
 // turning the burger 90 degrees on a vertical axis
-burgerToArrowTimeline.to("#burger", {duration:burgerArrowSpeed, rotation:-90}, "animatedBurger")
+burgerToArrowTimeline.to("#burger", {duration:burgerArrowSpeed, rotation:-45}, "animatedBurger")
                      .to("#bottom-line",{duration:burgerArrowSpeed, y:-10}, "animatedBurger")
                      .to("#top-line",{duration:burgerArrowSpeed, y:10}, "animatedBurger")
                      .to("#left-arrow", {duration:burgerArrowSpeed, rotation:55}, "createArrow")
