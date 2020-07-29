@@ -14,9 +14,12 @@ gsap.set(".lines", {transformOrigin:"center"});
 //ver 2: 
 // burgerAnimationTimeLine.to("#burger");
 
-burgerAnimationTimeLine.to("#top-line", {duration:burgerAnimationSpeed, rotation:-45})
-                        .to("#bottom-line", {duration:burgerAnimationSpeed, rotation:45})
-
+burgerAnimationTimeLine.to("#top-line", {duration:burgerAnimationSpeed, rotation:-45},"burgerX")
+                        .to("#bottom-line", {duration:burgerAnimationSpeed, rotation:45}, "burgerX")
+                        .to("#middle-line", {duration:burgerAnimationSpeed, alpha:0}, "burgerX")
+                        .to("#right-arrow", {duration:burgerAnimationSpeed, alpha:0, rotation:0}, "burgerX")
+                        .to("#left-arrow", {duration:burgerAnimationSpeed, alpha:0, rotation:0}, "burgerX")
+                        
 
 
 function animateBurger(){
@@ -27,6 +30,7 @@ function animateBurger(){
     if(canYouSeeTheMenu === true){
         //turn the burger into an X
         burgerAnimationTimeLine.play();
+        
     }
     else{
         //turn the X into a burger
