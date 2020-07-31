@@ -19,6 +19,7 @@ burgerToArrowTimeline.to("#burger", {duration:burgerArrowSpeed, rotation:-90}, "
 gsap.set("#up-left-arrow", {transformOrigin:"right center", alpha:0});
 gsap.set("#up-right-arrow", {transformOrigin:"right center", alpha:0});
 
+//turning the X back into a burger
 var xToArrowTimeline = gsap.timeline({paused:true});
 xToArrowTimeline
                 // .to("#down-right-arrow", {duration:burgerArrowSpeed, alpha:0}, "animatedBurgerx")
@@ -32,11 +33,6 @@ xToArrowTimeline
                 .to("#down-right-arrow", {duration:burgerArrowSpeed, alpha:1}, "animatedBurgerx")
                 .to("#down-left-arrow", {duration:burgerArrowSpeed, alpha:1}, "animatedBurgerx")
                 
-                     
-
-
-// $("#burger").on("mouseenter", burgerToArrowTimeline({play:true}));
-// $("#burger").on("mouseleave", burgerToArrowTimeline);
 
 $("#burger").on("mouseenter", function(){
     

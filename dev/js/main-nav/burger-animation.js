@@ -35,12 +35,12 @@ function animateBurger(){
     //check the canYouSeeTheMenu value
 
     if(canYouSeeTheMenu === true){
-        //turn the burger into an X
+        //hover: burger into down arrow
         burgerAnimationTimeLine.play();
         
     }
     else{
-        //turn the X into a burger
+        //hover: X into up arrow
         upArrowtoBurger.reverse();
     }
 }
