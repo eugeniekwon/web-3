@@ -17,9 +17,16 @@ gsap.set(".lines", {transformOrigin:"center"});
 burgerAnimationTimeLine.to("#top-line", {duration:burgerAnimationSpeed, rotation:-45},"burgerX")
                         .to("#bottom-line", {duration:burgerAnimationSpeed, rotation:45}, "burgerX")
                         .to("#middle-line", {duration:burgerAnimationSpeed, alpha:0}, "burgerX")
-                        .to("#right-arrow", {duration:burgerAnimationSpeed, alpha:0, rotation:0}, "burgerX")
-                        .to("#left-arrow", {duration:burgerAnimationSpeed, alpha:0, rotation:0}, "burgerX")
+                        .to("#down-right-arrow", {duration:burgerAnimationSpeed, alpha:0, rotation:0}, "burgerX")
+                        .to("#down-left-arrow", {duration:burgerAnimationSpeed, alpha:0, rotation:0}, "burgerX")
                         
+
+
+var upArrowtoBurger = gsap.timeline({paused: true});
+upArrowtoBurger.to("top-line", {y:0}, "backtoburger")
+              .to("bottom-line", {y:0}, "backtoburger")
+              .to("middle-line", {alpha:1}, "backtoburger")
+              .to("burger", {rotation:0}, "backtoburger")
 
 
 function animateBurger(){
@@ -34,7 +41,7 @@ function animateBurger(){
     }
     else{
         //turn the X into a burger
-        burgerAnimationTimeLine.reverse();
+        upArrowtoBurger.reverse();
     }
 }
 

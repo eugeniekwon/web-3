@@ -27,9 +27,6 @@ function hideShowMainNav(){
         //reset back to true, so that the menu will go away
         canYouSeeTheMenu = true;
 
-        //hover: arrow down (homepage)
-        rolloverBurger();
-
         //turn burger into an X
         animateBurger();
 
@@ -43,9 +40,6 @@ function hideShowMainNav(){
 
         //reset back to false, so that the menu will come back
         canYouSeeTheMenu = false;
-
-        //hover: arrow up (nav)
-        rolloverBurgerUp();
 
         //turn X into a burger
         animateBurger();

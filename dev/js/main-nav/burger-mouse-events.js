@@ -7,12 +7,31 @@ gsap.set("#burger", {rotation:0,transformOrigin:("center")});
 
 
 // turning the burger 90 degrees on a vertical axis
-burgerToArrowTimeline.to("#burger", {duration:burgerArrowSpeed, rotation:-45}, "animatedBurger")
+burgerToArrowTimeline.to("#burger", {duration:burgerArrowSpeed, rotation:-90}, "animatedBurger")
                      .to("#bottom-line",{duration:burgerArrowSpeed, y:-10}, "animatedBurger")
                      .to("#top-line",{duration:burgerArrowSpeed, y:10}, "animatedBurger")
-                     .to("#left-arrow", {duration:burgerArrowSpeed, rotation:55}, "createArrow")
-                     .to("#right-arrow", {duration:burgerArrowSpeed, rotation:-55}, "createArrow")
-                     
+                     .to("#middle-line",{duration:burgerArrowSpeed, alpha:0}, "animatedBurger")
+                     .to("#down-left-arrow", {duration:burgerArrowSpeed, rotation:55}, "createArrow")
+                     .to("#down-right-arrow", {duration:burgerArrowSpeed, rotation:-55}, "createArrow")
+
+
+
+gsap.set("#up-left-arrow", {transformOrigin:"right center", alpha:0});
+gsap.set("#up-right-arrow", {transformOrigin:"right center", alpha:0});
+
+var xToArrowTimeline = gsap.timeline({paused:true});
+xToArrowTimeline
+                // .to("#down-right-arrow", {duration:burgerArrowSpeed, alpha:0}, "animatedBurgerx")
+                // .to("#down-left-arrow", {duration:burgerArrowSpeed, alpha:0}, "animatedBurgerx")
+                .to("#up-left-arrow", {duration:burgerArrowSpeed, alpha:1, rotation:55}, "animatedBurgerx")
+                .to("#up-right-arrow", {duration:burgerArrowSpeed, alpha:1, rotation:-55}, "animatedBurgerx")
+                .to("#bottom-line", {duration:burgerArrowSpeed, rotation:0}, "animatedBurgerx")
+                .to("#top-line", {duration:burgerArrowSpeed, rotation:0}, "animatedBurgerx")
+                .to("#up-right-arrow", {duration:burgerArrowSpeed, alpha:0}, "animatedBurgerx")
+                .to("#up-left-arrow", {duration:burgerArrowSpeed, alpha:0}, "animatedBurgerx")
+                .to("#down-right-arrow", {duration:burgerArrowSpeed, alpha:1}, "animatedBurgerx")
+                .to("#down-left-arrow", {duration:burgerArrowSpeed, alpha:1}, "animatedBurgerx")
+                
                      
 
 
@@ -22,7 +41,15 @@ burgerToArrowTimeline.to("#burger", {duration:burgerArrowSpeed, rotation:-45}, "
 $("#burger").on("mouseenter", function(){
     
     console.log("mouse enter");
-    burgerToArrowTimeline.play();
+
+    if(canYouSeeTheMenu === false){
+ 
+        burgerToArrowTimeline.play();
+        
+    }
+    else{
+        xToArrowTimeline.play();
+    }
 
 })
 
@@ -30,26 +57,17 @@ $("#burger").on("mouseleave", function(){
     
     console.log("mouse leave");
 
-    burgerToArrowTimeline.reverse();
+    if(canYouSeeTheMenu === false){
+        burgerToArrowTimeline.reverse();
+        
+    } 
+    else{
+        xToArrowTimeline.reverse();
+    }
+
+    
 })
 
-
-
-function rolloverBurger(){
-    console.log("rollover burger")
-
-    // check the canYouSeeTheMenu value
-
-    if(animateBurger === false){
-        
-        // turn the burger into a hover of down arrow
-        burgerToArrowTimeline.play();
-    }
-    else{
-         // turn the hovered up arrow into an burger
-        burgerToArrowTimeline.reverse();
-    }
-}
 
 
 
