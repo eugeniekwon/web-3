@@ -8,7 +8,7 @@ gsap.set(".lines", {transformOrigin:"center"});
 var burgerAnimationTimeLine = gsap.timeline({paused:true});
 
 burgerAnimationTimeLine.addLabel("burgerToDownArrow")
-                      .to("#burger", {duration:burgerAnimationSpeed, rotation:-90}, "animatedBurger")
+                      .to("#burger", {duration:burgerAnimationSpeed, rotation:-45}, "animatedBurger")
                       .to("#bottom-line",{duration:burgerAnimationSpeed, y:-10}, "animatedBurger")
                       .to("#top-line",{duration:burgerAnimationSpeed, y:10}, "animatedBurger")
                       .to("#middle-line",{duration:burgerAnimationSpeed, alpha:0}, "animatedBurger")

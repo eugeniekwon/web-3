@@ -1,7 +1,7 @@
 
 // var burgerToArrowTimeline = gsap.timeline({paused:true});
 
-gsap.set("#burger", {rotation:0,transformOrigin:("center")});
+gsap.set("#burger", {transformOrigin:("center")});
 
 gsap.set("#up-left-arrow", {transformOrigin:"right center", alpha:0});
 gsap.set("#up-right-arrow", {transformOrigin:"right center", alpha:0});
@@ -17,7 +17,7 @@ $("#burger").on("mouseenter", function(){
         
     }
     else{
-        burgerAnimationTimeLine.play("xToArrowTimeline");
+        burgerAnimationTimeLine.play("XtoUpArrow");
     }
 
 })
@@ -31,7 +31,7 @@ $("#burger").on("mouseleave", function(){
         
     } 
     else{
-        burgerAnimationTimeLine.reverse("xToArrowTimelineReverse");
+        burgerAnimationTimeLine.reverse("XtoUpArrowReverse");
     }
 
     
