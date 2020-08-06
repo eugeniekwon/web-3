@@ -19,43 +19,32 @@ function hideShowMainNav(){
     // console.log("hide or show nav");
     //toggles the css display property
     // $("#main-nav").toggle();
-    
+
     if(canYouSeeTheMenu === false){
 
-        console.log("show the menu");
-
-        //reset back to true, so that the menu will go away
-        canYouSeeTheMenu = true;
-
-        //turn burger into an X
-        animateBurger();
-
         //slide the #main-nav down into view
+        
+        burgerAnimationTimeLine.play("downArrowtoX");
+
         mainNavTimeline.play();
 
+        canYouSeeTheMenu = true;
 
     }
     else{
-        console.log("hide the menu");
-
-        //reset back to false, so that the menu will come back
-        canYouSeeTheMenu = false;
-
-        //turn X into a burger
-        animateBurger();
 
         //slide the #main-nav up out of view
+        burgerAnimationTimeLine.play("UpArrowtoX");
+
         mainNavTimeline.reverse();
 
-        
-        
+        canYouSeeTheMenu = false;
     }
 
 }
 
 
 var menuBackground = document.querySelector('#main-nav');
-
 window.onclick = function(event){
     
     //hiding menu when clicked anywhere outside of the button areas
@@ -64,3 +53,15 @@ window.onclick = function(event){
     }
     
 }
+
+//add a listener to the window for every time it's being resized
+window.addEventListener('resize', reportWindowSize);
+
+function reportWindowSize(){
+    if (canYouSeeTheMenu === false){
+        navHeight = $("#main-nav").outerHeight();
+        gsap.set("#main-Nav",{y: -navHeight});
+    }
+}
+
+
