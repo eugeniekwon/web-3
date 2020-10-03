@@ -549,7 +549,7 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/js/scrollTrigger-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
@@ -560,7 +560,7 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/js/scrollTriggerReg-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
@@ -836,6 +836,39 @@
 		"oAP": "/build/node_modules",
 		"oF": 0
 		},
+	"/node_modules/gsap/CSSPlugin.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/gsap/CSSPlugin-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/gsap/gsap-core.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/gsap/gsap-core-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/gsap/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/gsap/index-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/package-lock.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -860,7 +893,7 @@
 "projectAttributes": {
 	"creationDate": 614776199.681615,
 	"displayValue": "web-3",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets-cafe",
 	"iconImageWasSetByUser": 0
 	},
