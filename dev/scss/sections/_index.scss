@@ -31,6 +31,7 @@
         }
 
         #home-gallery-1 {
+            overflow: hidden;
             >div {
                 ul {
                     display: grid;
@@ -87,7 +88,7 @@
 
         #line-h1{
             display: flex;
-            justify-content: flex-end;;
+            justify-content: flex-end;
         }
 
         #line-h-special {
@@ -136,6 +137,7 @@
         }
 
         #home-gallery-2 {
+            overflow: hidden;
             >div {
                 ul {
                     display: grid;
